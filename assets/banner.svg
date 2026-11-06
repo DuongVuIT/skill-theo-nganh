@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="400" viewBox="0 0 1280 400" role="img" aria-labelledby="t d">
+  <title id="t">Skill theo ngành</title>
+  <desc id="d">Plugin Claude Code cho từng nghề, cài bằng một lệnh: claude plugin marketplace add DuongVuIT/skill-theo-nganh</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset=".55" stop-color="#1e1b4b"/>
+      <stop offset="1" stop-color="#3b0764"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="1150" cy="30" r="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f97316" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#f97316" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="90" cy="420" r="380" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#14b8a6" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#14b8a6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="word" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fb923c"/>
+      <stop offset="1" stop-color="#f472b6"/>
+    </linearGradient>
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.3" fill="#fff" fill-opacity=".07"/>
+    </pattern>
+    <clipPath id="card"><rect width="1280" height="400" rx="28"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#card)">
+    <rect width="1280" height="400" fill="url(#bg)"/>
+    <rect width="1280" height="400" fill="url(#glowA)"/>
+    <rect width="1280" height="400" fill="url(#glowB)"/>
+    <rect width="1280" height="400" fill="url(#dots)"/>
+  </g>
+
+  <g font-family="system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif">
+    <text x="72" y="100" fill="#fdba74" font-size="17" font-weight="700" letter-spacing="4">CLAUDE CODE · PLUGIN MARKETPLACE</text>
+    <text x="70" y="182" fill="#fff" font-size="76" font-weight="800" letter-spacing="-1.5">Skill theo <tspan fill="url(#word)">ngành</tspan></text>
+    <text x="72" y="232" fill="#cbd5e1" font-size="27">Plugin cho từng nghề, cài bằng một lệnh.</text>
+  </g>
+
+  <rect x="72" y="270" width="724" height="58" rx="14" fill="#020617" fill-opacity=".7" stroke="#475569" stroke-opacity=".7"/>
+  <text x="96" y="306" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="19"><tspan fill="#fb923c">$</tspan><tspan fill="#e2e8f0"> claude plugin marketplace add </tspan><tspan fill="#5eead4">DuongVuIT/skill-theo-nganh</tspan></text>
+
+  <g font-family="system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif" font-size="16" font-weight="600" fill="#e2e8f0">
+    <g transform="translate(840 50)"><rect width="192" height="40" rx="20" fill="#fff" fill-opacity=".07" stroke="#fff" stroke-opacity=".16"/><circle cx="20" cy="20" r="6" fill="#f59e0b"/><text x="36" y="26">Xây dựng &amp; BIM</text></g>
+    <g transform="translate(1046 50)"><rect width="192" height="40" rx="20" fill="#fff" fill-opacity=".07" stroke="#fff" stroke-opacity=".16"/><circle cx="20" cy="20" r="6" fill="#3b82f6"/><text x="36" y="26">Phần mềm</text></g>
+    <g transform="translate(840 102)"><rect width="192" height="40" rx="20" fill="#fff" fill-opacity=".07" stroke="#fff" stroke-opacity=".16"/><circle cx="20" cy="20" r="6" fill="#22c55e"/><text x="36" y="26">Điện tử &amp; cơ khí</text></g>
+    <g transform="translate(1046 102)"><rect width="192" height="40" rx="20" fill="#fff" fill-opacity=".07" stroke="#fff" stroke-opacity=".16"/><circle cx="20" cy="20" r="6" fill="#ec4899"/><text x="36" y="26">Design</text></g>
+    <g transform="translate(840 154)"><rect width="192" height="40" rx="20" fill="#fff" fill-opacity=".07" stroke="#fff" stroke-opacity=".16"/><circle cx="20" cy="20" r="6" fill="#f97316"/><text x="36" y="26">Marketing</text></g>
+    <g transform="translate(1046 154)"><rect width="192" height="40" rx="20" fill="#fff" fill-opacity=".07" stroke="#fff" stroke-opacity=".16"/><circle cx="20" cy="20" r="6" fill="#eab308"/><text x="36" y="26">Tài chính</text></g>
+    <g transform="translate(840 206)"><rect width="192" height="40" rx="20" fill="#fff" fill-opacity=".07" stroke="#fff" stroke-opacity=".16"/><circle cx="20" cy="20" r="6" fill="#a78bfa"/><text x="36" y="26">Pháp lý</text></g>
+    <g transform="translate(1046 206)"><rect width="192" height="40" rx="20" fill="#fff" fill-opacity=".07" stroke="#fff" stroke-opacity=".16"/><circle cx="20" cy="20" r="6" fill="#14b8a6"/><text x="36" y="26">Quản lý</text></g>
+    <g transform="translate(840 258)"><rect width="192" height="40" rx="20" fill="#fff" fill-opacity=".07" stroke="#fff" stroke-opacity=".16"/><circle cx="20" cy="20" r="6" fill="#38bdf8"/><text x="36" y="26">Giáo dục</text></g>
+    <g transform="translate(1046 258)"><rect width="192" height="40" rx="20" fill="#fff" fill-opacity=".07" stroke="#fff" stroke-opacity=".16"/><circle cx="20" cy="20" r="6" fill="#84cc16"/><text x="36" y="26">Khoa học</text></g>
+    <g transform="translate(840 310)"><rect width="192" height="40" rx="20" fill="#fff" fill-opacity=".07" stroke="#fff" stroke-opacity=".16"/><circle cx="20" cy="20" r="6" fill="#94a3b8"/><text x="36" y="26">Văn phòng</text></g>
+    <g transform="translate(1046 310)"><rect width="192" height="40" rx="20" fill="#f97316" fill-opacity=".22" stroke="#fb923c" stroke-opacity=".6"/><circle cx="20" cy="20" r="6" fill="#ef4444"/><text x="36" y="26" fill="#fed7aa">Tiếng Việt</text></g>
+  </g>
+</svg>

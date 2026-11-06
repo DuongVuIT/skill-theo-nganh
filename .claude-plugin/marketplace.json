@@ -1,0 +1,1674 @@
+{
+  "name": "skill-theo-nganh",
+  "owner": {
+    "name": "Vũ Đại Dương"
+  },
+  "metadata": {
+    "description": "Plugin Claude Code theo ngành nghề, gom từ kho gốc của từng tác giả: xây dựng, phần mềm, điện tử, design, marketing, tài chính, pháp lý, quản lý, giáo dục, khoa học."
+  },
+  "plugins": [
+    {
+      "name": "ddc-toolkit",
+      "description": "54 skill. Chuyển RVT/IFC/DWG sang dữ liệu, phân tích BIM, quản lý chi phí, tiến độ, hồ sơ tài liệu, mua sắm, hiện trường, nguồn lực, bàn giao, phát triển bền vững. Cần Python.",
+      "author": {
+        "name": "DataDrivenConstruction"
+      },
+      "homepage": "https://github.com/datadrivenconstruction/DDC_Skills_for_AI_Agents_in_Construction/tree/HEAD/1_DDC_Toolkit",
+      "category": "Xây dựng & BIM",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/datadrivenconstruction/DDC_Skills_for_AI_Agents_in_Construction.git",
+        "path": "1_DDC_Toolkit",
+        "ref": "main",
+        "sha": "410ed1e71e4a5c6fd231afd0c8d1e586a9f546e8"
+      },
+      "strict": false,
+      "skills": [
+        "./Analytics/daily-progress-report",
+        "./Analytics/productivity-analyzer",
+        "./Analytics/project-kpi-dashboard",
+        "./BIM-Analysis/bim-clash-detection",
+        "./BIM-Analysis/bim-classification-ai",
+        "./BIM-Analysis/bim-validation-report",
+        "./BIM-Analysis/co2-carbon-footprint",
+        "./BIM-Analysis/ifc-qto-extraction",
+        "./BIM-Analysis/progress-photo-analyzer",
+        "./BIM-Visualization/nobim-image-generator",
+        "./CAD-Converters/batch-cad-converter",
+        "./CAD-Converters/dgn-to-excel",
+        "./CAD-Converters/dwg-to-excel",
+        "./CAD-Converters/excel-to-bim",
+        "./CAD-Converters/excel-to-rvt",
+        "./CAD-Converters/ifc-to-excel",
+        "./CAD-Converters/rvt-to-excel",
+        "./CAD-Converters/rvt-to-ifc",
+        "./Closeout/as-built-tracker",
+        "./Closeout/warranty-tracker",
+        "./Cost-Management/bim-cost-estimation-cwicr",
+        "./Cost-Management/budget-variance-analyzer",
+        "./Cost-Management/cash-flow-forecaster",
+        "./Cost-Management/change-order-processor",
+        "./Cost-Management/material-delivery-tracker",
+        "./Cost-Management/payment-application-generator",
+        "./Cost-Management/subcontractor-payment-tracker",
+        "./Document-Control/as-built-documentation",
+        "./Document-Control/contract-clause-analyzer",
+        "./Document-Control/meeting-minutes-generator",
+        "./Document-Control/rfi-management",
+        "./Document-Control/submittal-tracker",
+        "./Field-Operations/daily-report-generator",
+        "./Field-Operations/progress-photo-analyzer",
+        "./Field-Operations/punch-list-manager",
+        "./Field-Operations/safety-inspection",
+        "./Kaggle-Notebooks/5000-projects-analysis",
+        "./Procurement/bid-analysis-comparator",
+        "./Procurement/material-procurement-tracker",
+        "./Procurement/material-tracker",
+        "./Procurement/subcontractor-prequalification",
+        "./Project-Closeout/project-closeout-checklist",
+        "./Project-Closeout/punch-list-manager",
+        "./Resource-Management/equipment-fleet-manager",
+        "./Resource-Management/labor-allocation",
+        "./Resource-Management/labor-productivity-analyzer",
+        "./Schedule-Integration/bim-to-schedule-4d",
+        "./Schedule-Integration/schedule-cost-link",
+        "./Schedule-Integration/weather-impact-scheduler",
+        "./Schedule-Management/bim-to-schedule-4d",
+        "./Schedule-Management/critical-path-analyzer",
+        "./Schedule-Management/schedule-delay-analyzer",
+        "./Sustainability/carbon-calculator",
+        "./Sustainability/co2-carbon-footprint"
+      ]
+    },
+    {
+      "name": "ddc-cwicr",
+      "description": "31 skill. Dự toán bằng cơ sở dữ liệu đơn giá CWICR: tính chi phí, bóc khối lượng, phân tích giá thầu, phát sinh, nhân công, vật tư, rủi ro, báo cáo. Cần Python.",
+      "author": {
+        "name": "DataDrivenConstruction"
+      },
+      "homepage": "https://github.com/datadrivenconstruction/DDC_Skills_for_AI_Agents_in_Construction/tree/HEAD/1_DDC_Toolkit/CWICR-Database",
+      "category": "Xây dựng & BIM",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/datadrivenconstruction/DDC_Skills_for_AI_Agents_in_Construction.git",
+        "path": "1_DDC_Toolkit/CWICR-Database",
+        "ref": "main",
+        "sha": "410ed1e71e4a5c6fd231afd0c8d1e586a9f546e8"
+      },
+      "strict": false,
+      "skills": [
+        "./cwicr-assembly-builder",
+        "./cwicr-bid-analyzer",
+        "./cwicr-change-order",
+        "./cwicr-comparison-tool",
+        "./cwicr-cost-calculator",
+        "./cwicr-crew-optimizer",
+        "./cwicr-data-loader",
+        "./cwicr-data-validator",
+        "./cwicr-equipment-planner",
+        "./cwicr-escalation",
+        "./cwicr-historical-cost",
+        "./cwicr-labor-scheduler",
+        "./cwicr-location-factor",
+        "./cwicr-material-procurement",
+        "./cwicr-material-substitution",
+        "./cwicr-multilingual",
+        "./cwicr-overhead-markup",
+        "./cwicr-productivity-tracker",
+        "./cwicr-quantity-matcher",
+        "./cwicr-rate-updater",
+        "./cwicr-report-generator",
+        "./cwicr-resource-analyzer",
+        "./cwicr-risk-calculator",
+        "./cwicr-schedule-integrator",
+        "./cwicr-subcontractor",
+        "./cwicr-takeoff-helper",
+        "./cwicr-unit-converter",
+        "./cwicr-value-engineering",
+        "./cwicr-waste-calculator",
+        "./cwicr-work-breakdown",
+        "./semantic-search-cwicr"
+      ]
+    },
+    {
+      "name": "ddc-book",
+      "description": "67 skill. Theo từng chương sách Data-Driven Construction: chuẩn dữ liệu mở, phân tích bằng pandas và LLM, PDF/CAD sang dữ liệu, kiểm chất lượng dữ liệu, dự toán, bóc khối lượng tự động, 4D BIM và CO2, ETL, dashboard KPI, dự đoán chi phí bằng ML. Cần Python.",
+      "author": {
+        "name": "DataDrivenConstruction"
+      },
+      "homepage": "https://github.com/datadrivenconstruction/DDC_Skills_for_AI_Agents_in_Construction/tree/HEAD/2_DDC_Book",
+      "category": "Xây dựng & BIM",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/datadrivenconstruction/DDC_Skills_for_AI_Agents_in_Construction.git",
+        "path": "2_DDC_Book",
+        "ref": "main",
+        "sha": "410ed1e71e4a5c6fd231afd0c8d1e586a9f546e8"
+      },
+      "strict": false,
+      "skills": [
+        "./1.1-Data-Evolution/data-evolution-analysis",
+        "./1.1-Data-Evolution/historical-data-manager",
+        "./1.2-Data-Silos-Integration/data-silo-detection",
+        "./1.2-Data-Silos-Integration/data-source-audit",
+        "./1.2-Data-Silos-Integration/erp-integration-analysis",
+        "./2.1-Data-Types-Classification/csv-handler",
+        "./2.1-Data-Types-Classification/data-profiler",
+        "./2.1-Data-Types-Classification/data-type-classifier",
+        "./2.1-Data-Types-Classification/json-parser",
+        "./2.1-Data-Types-Classification/sql-query-builder",
+        "./2.1-Data-Types-Classification/xml-reader",
+        "./2.2-Open-Data-Standards/ontology-mapper",
+        "./2.2-Open-Data-Standards/open-data-integrator",
+        "./2.2-Open-Data-Standards/price-api",
+        "./2.2-Open-Data-Standards/weather-api",
+        "./2.3-Pandas-LLM-Analysis/df-merger",
+        "./2.3-Pandas-LLM-Analysis/llm-data-automation",
+        "./2.3-Pandas-LLM-Analysis/pandas-construction-analysis",
+        "./2.3-Pandas-LLM-Analysis/rag-construction",
+        "./2.4-PDF-CAD-to-Data/cad-to-data",
+        "./2.4-PDF-CAD-to-Data/drawing-analyzer",
+        "./2.4-PDF-CAD-to-Data/image-to-data",
+        "./2.4-PDF-CAD-to-Data/pdf-to-structured",
+        "./2.4-PDF-CAD-to-Data/specification-extractor",
+        "./2.5-Data-Modeling-Standards/data-model-designer",
+        "./2.5-Data-Modeling-Standards/standards-compliance-checker",
+        "./2.6-Data-Quality-Validation/data-anomaly-detector",
+        "./2.6-Data-Quality-Validation/data-lineage-tracker",
+        "./2.6-Data-Quality-Validation/data-quality-check",
+        "./2.6-Data-Quality-Validation/validation-rules-builder",
+        "./3.1-Cost-Estimation/cost-estimation-resource",
+        "./3.1-Cost-Estimation/estimate-builder",
+        "./3.1-Cost-Estimation/historical-cost-analyzer",
+        "./3.1-Cost-Estimation/labor-rate",
+        "./3.1-Cost-Estimation/unit-price-database-manager",
+        "./3.2-QTO-Auto-Estimates/auto-estimate-generator",
+        "./3.2-QTO-Auto-Estimates/bim-qto",
+        "./3.2-QTO-Auto-Estimates/qto-report",
+        "./3.3-4D-BIM-CO2-Simulation/4d-simulation",
+        "./3.3-4D-BIM-CO2-Simulation/co2-estimation",
+        "./3.3-4D-BIM-CO2-Simulation/gantt-chart",
+        "./3.3-4D-BIM-CO2-Simulation/lifecycle-carbon-calculator",
+        "./3.3-4D-BIM-CO2-Simulation/resource-leveler",
+        "./3.4-ERP-Integration/erp-data-extractor",
+        "./3.5-Interoperability/interoperability-analyzer",
+        "./4.1-Analytics-KPI-Dashboard/data-visualization",
+        "./4.1-Analytics-KPI-Dashboard/decision-support",
+        "./4.1-Analytics-KPI-Dashboard/kpi-dashboard",
+        "./4.1-Analytics-KPI-Dashboard/predictive-analytics-construction",
+        "./4.1-Analytics-KPI-Dashboard/scenario-planner",
+        "./4.2-ETL-Automation/airflow-dag",
+        "./4.2-ETL-Automation/etl-pipeline",
+        "./4.2-ETL-Automation/pdf-report-generator",
+        "./4.2-ETL-Automation/workflow-automation",
+        "./4.3-BIM-Validation-Pipeline/bim-consistency-checker",
+        "./4.3-BIM-Validation-Pipeline/bim-validation-pipeline",
+        "./4.3-BIM-Validation-Pipeline/clash-resolution-analyzer",
+        "./4.3-BIM-Validation-Pipeline/ids-checker",
+        "./4.4-Vector-Search-BigData/big-data-analysis",
+        "./4.4-Vector-Search-BigData/parquet-converter",
+        "./4.4-Vector-Search-BigData/vector-search",
+        "./4.5-ML-Cost-Prediction/cost-prediction",
+        "./4.5-ML-Cost-Prediction/duration-prediction",
+        "./4.5-ML-Cost-Prediction/ml-model-builder",
+        "./4.5-ML-Cost-Prediction/ml-model-retrainer",
+        "./4.5-ML-Cost-Prediction/schedule-forecaster",
+        "./5.1-Digital-Maturity-Strategy/digital-maturity-assessment"
+      ]
+    },
+    {
+      "name": "ddc-insights",
+      "description": "20 skill. Tự động hóa quy trình, an toàn và chất lượng, tối ưu tiến độ, tự động hóa hiện trường, agent AI cho dự án xây dựng.",
+      "author": {
+        "name": "DataDrivenConstruction"
+      },
+      "homepage": "https://github.com/datadrivenconstruction/DDC_Skills_for_AI_Agents_in_Construction/tree/HEAD/3_DDC_Insights",
+      "category": "Xây dựng & BIM",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/datadrivenconstruction/DDC_Skills_for_AI_Agents_in_Construction.git",
+        "path": "3_DDC_Insights",
+        "ref": "main",
+        "sha": "410ed1e71e4a5c6fd231afd0c8d1e586a9f546e8"
+      },
+      "strict": false,
+      "skills": [
+        "./AI-Agents/llm-document-extraction",
+        "./AI-Agents/multi-agent-estimation",
+        "./Automation-Workflows/n8n-cost-estimation",
+        "./Automation-Workflows/n8n-daily-report",
+        "./Automation-Workflows/n8n-photo-report",
+        "./Automation-Workflows/n8n-project-management",
+        "./Automation-Workflows/n8n-pto-pipeline",
+        "./Field-Automation/telegram-field-bot",
+        "./Field-Automation/voice-to-report",
+        "./Open-Data-Transparency/uberization-readiness",
+        "./Safety-Quality/compliance-tracker",
+        "./Safety-Quality/incident-reporting",
+        "./Safety-Quality/quality-control-workflow",
+        "./Safety-Quality/safety-inspection-checklist",
+        "./Safety-Quality/toolbox-talk-generator",
+        "./Schedule-Optimization/critical-path-analyzer",
+        "./Schedule-Optimization/delay-analysis",
+        "./Schedule-Optimization/look-ahead-scheduler",
+        "./Schedule-Optimization/resource-allocation-optimizer",
+        "./Schedule-Optimization/schedule-compression"
+      ]
+    },
+    {
+      "name": "ddc-curated",
+      "description": "20 skill. Hợp đồng và pháp lý, kiểm dữ liệu, sinh tài liệu, quản lý tài chính, viết prompt, đảm bảo chất lượng cho dự án xây dựng.",
+      "author": {
+        "name": "DataDrivenConstruction"
+      },
+      "homepage": "https://github.com/datadrivenconstruction/DDC_Skills_for_AI_Agents_in_Construction/tree/HEAD/4_DDC_Curated",
+      "category": "Xây dựng & BIM",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/datadrivenconstruction/DDC_Skills_for_AI_Agents_in_Construction.git",
+        "path": "4_DDC_Curated",
+        "ref": "main",
+        "sha": "410ed1e71e4a5c6fd231afd0c8d1e586a9f546e8"
+      },
+      "strict": false,
+      "skills": [
+        "./Contract-Legal/change-order-manager",
+        "./Contract-Legal/claims-documentation",
+        "./Contract-Legal/contract-clause-extractor",
+        "./Contract-Legal/lien-waiver-tracker",
+        "./Data-Validation/input-validation",
+        "./Data-Validation/schema-validation",
+        "./Document-Generation/docx-construction",
+        "./Document-Generation/email-construction",
+        "./Document-Generation/pdf-construction",
+        "./Document-Generation/pptx-construction",
+        "./Document-Generation/xlsx-construction",
+        "./Financial-Management/budget-variance-analyzer",
+        "./Financial-Management/cashflow-forecaster",
+        "./Financial-Management/payment-application-processor",
+        "./Financial-Management/retention-tracker",
+        "./Prompt-Engineering/few-shot-examples",
+        "./Prompt-Engineering/prompt-templates",
+        "./Quality-Assurance/continuous-learning",
+        "./Quality-Assurance/security-review-construction",
+        "./Quality-Assurance/verification-loop-construction"
+      ]
+    },
+    {
+      "name": "ddc-innovative",
+      "description": "34 skill. Hướng mới: digital twin, khảo sát bằng drone, phát hiện lỗi bằng AI, kiểm va chạm BIM, carbon hàm chứa và ESG, mô phỏng năng lượng, IoT theo dõi vật tư, tự động hóa bằng n8n.",
+      "author": {
+        "name": "DataDrivenConstruction"
+      },
+      "homepage": "https://github.com/datadrivenconstruction/DDC_Skills_for_AI_Agents_in_Construction/tree/HEAD/5_DDC_Innovative",
+      "category": "Xây dựng & BIM",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/datadrivenconstruction/DDC_Skills_for_AI_Agents_in_Construction.git",
+        "path": "5_DDC_Innovative",
+        "ref": "main",
+        "sha": "410ed1e71e4a5c6fd231afd0c8d1e586a9f546e8"
+      },
+      "strict": false,
+      "skills": [
+        "./ai-act-compliance",
+        "./ai-agent-orchestration",
+        "./as-built-documentation",
+        "./bim-visual-programming-automation",
+        "./capacity-planning",
+        "./change-order-analysis",
+        "./clash-detection-analysis",
+        "./contractor-matching-ai",
+        "./defect-detection-ai",
+        "./digital-twin-sync",
+        "./document-classification-nlp",
+        "./drone-site-survey",
+        "./embodied-carbon-esg",
+        "./energy-simulation",
+        "./enterprise-risk-aggregator",
+        "./environmental-monitoring",
+        "./equipment-telematics",
+        "./generative-ai-design",
+        "./ifc-data-extraction",
+        "./labor-productivity-analytics",
+        "./material-passports-circular",
+        "./material-tracking-iot",
+        "./n8n-workflow-automation",
+        "./open-construction-estimate",
+        "./permit-tracking-automation",
+        "./portfolio-dashboard",
+        "./prefab-optimization",
+        "./progress-monitoring-cv",
+        "./resource-pool-optimizer",
+        "./risk-assessment-ml",
+        "./safety-compliance-checker",
+        "./sensor-data-aggregator",
+        "./site-logistics-optimization",
+        "./weather-impact-analysis"
+      ]
+    },
+    {
+      "name": "ddc-open-construction-erp",
+      "description": "12 skill. Làm việc với nền tảng OpenConstructionERP: bóc khối lượng từ BIM, dự toán và BOQ, đấu thầu, tiến độ 4D/5D, hiện trường, kết nối MCP.",
+      "author": {
+        "name": "DataDrivenConstruction"
+      },
+      "homepage": "https://github.com/datadrivenconstruction/DDC_Skills_for_AI_Agents_in_Construction/tree/HEAD/6_OpenConstructionERP",
+      "category": "Xây dựng & BIM",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/datadrivenconstruction/DDC_Skills_for_AI_Agents_in_Construction.git",
+        "path": "6_OpenConstructionERP",
+        "ref": "main",
+        "sha": "410ed1e71e4a5c6fd231afd0c8d1e586a9f546e8"
+      },
+      "strict": false,
+      "skills": [
+        "./oce-bim-takeoff",
+        "./oce-cost-browser",
+        "./oce-estimate-boq",
+        "./oce-field-ops",
+        "./oce-geo-coordination",
+        "./oce-load-cost-bases",
+        "./oce-mcp-integration",
+        "./oce-platform-overview",
+        "./oce-property-dev",
+        "./oce-scheduling-4d5d",
+        "./oce-tendering",
+        "./oce-validation-engine"
+      ]
+    },
+    {
+      "name": "engineering",
+      "displayName": "Engineering",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/knowledge-work-plugins.git",
+        "path": "engineering"
+      },
+      "description": "Standup, review code, quyết định kiến trúc, thiết kế hệ thống, xử lý sự cố, checklist deploy, chiến lược test, nợ kỹ thuật, tài liệu kỹ thuật.",
+      "homepage": "https://github.com/anthropics/knowledge-work-plugins/tree/HEAD/engineering",
+      "category": "Phần mềm & dữ liệu"
+    },
+    {
+      "name": "data",
+      "displayName": "Data",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/knowledge-work-plugins.git",
+        "path": "data"
+      },
+      "description": "Viết SQL, khám phá dữ liệu, thống kê, vẽ biểu đồ và dashboard, biến số liệu thô thành câu chuyện dễ hiểu.",
+      "homepage": "https://github.com/anthropics/knowledge-work-plugins/tree/HEAD/data",
+      "category": "Phần mềm & dữ liệu"
+    },
+    {
+      "name": "unity",
+      "displayName": "Unity",
+      "description": "Plugin chính chủ của Unity cho làm game: phát triển, kiếm tiền từ game, tối ưu hiệu năng.",
+      "category": "Phần mềm & dữ liệu",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/Unity-Technologies/unity-agent-plugin.git",
+        "sha": "ba48956ae8bee4ef8a3ef3d75dec03c16aa5cc89"
+      },
+      "homepage": "https://unity.com"
+    },
+    {
+      "name": "frontend-design",
+      "description": "Dựng giao diện web chỉn chu, có cá tính riêng, tránh kiểu giao diện AI na ná nhau.",
+      "author": {
+        "name": "Anthropic"
+      },
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/claude-plugins-official.git",
+        "path": "plugins/frontend-design"
+      },
+      "category": "Phần mềm & dữ liệu",
+      "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/plugins/frontend-design"
+    },
+    {
+      "name": "expo",
+      "description": "Skill chính chủ của Expo: build, deploy, nâng cấp, debug app React Native, dựng giao diện với Expo Router.",
+      "category": "Phần mềm & dữ liệu",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/expo/skills.git",
+        "path": "plugins/expo",
+        "ref": "main",
+        "sha": "d4f484024fec15196bfd3c272e953e3f983972cf"
+      },
+      "homepage": "https://github.com/expo/skills/blob/main/plugins/expo/README.md"
+    },
+    {
+      "name": "aws-startup-advisor",
+      "description": "Gợi ý kiến trúc, chi phí và bảo mật AWS theo đúng giai đoạn của startup.",
+      "author": {
+        "name": "Amazon Web Services"
+      },
+      "category": "Phần mềm & dữ liệu",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/aws/agent-toolkit-for-aws.git",
+        "path": "plugins/aws-startup-advisor",
+        "ref": "main",
+        "sha": "b310d1c46b4ced6423a737542c92a3a22cfe9e96"
+      },
+      "homepage": "https://github.com/aws/agent-toolkit-for-aws"
+    },
+    {
+      "name": "engineering-skills",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/alirezarezvani/claude-skills.git",
+        "path": "engineering-team"
+      },
+      "description": "Kỹ thuật phần mềm: kiến trúc, frontend, backend, fullstack, QA, DevOps, bảo mật, AI/ML, data engineering, Playwright, TDD, kiểm tra truy cập WCAG.",
+      "version": "2.14.9",
+      "author": {
+        "name": "Alireza Rezvani"
+      },
+      "keywords": [
+        "engineering",
+        "architecture",
+        "frontend",
+        "backend",
+        "devops",
+        "security",
+        "ai",
+        "ml",
+        "data",
+        "playwright",
+        "google-workspace",
+        "gws",
+        "gmail",
+        "google-drive",
+        "google-sheets"
+      ],
+      "category": "Phần mềm & dữ liệu",
+      "homepage": "https://github.com/alirezarezvani/claude-skills/tree/HEAD/engineering-team"
+    },
+    {
+      "name": "engineering-advanced-skills",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/alirezarezvani/claude-skills.git",
+        "path": "engineering"
+      },
+      "description": "Kỹ thuật nâng cao: thiết kế agent và RAG, thiết kế cơ sở dữ liệu, migration, observability, rà dependency, review API, changelog.",
+      "version": "2.14.17",
+      "author": {
+        "name": "Alireza Rezvani"
+      },
+      "keywords": [
+        "agent-design",
+        "rag",
+        "database",
+        "migration",
+        "observability",
+        "dependency-audit",
+        "release",
+        "api-review",
+        "ci-cd",
+        "mcp",
+        "security-audit"
+      ],
+      "category": "Phần mềm & dữ liệu",
+      "homepage": "https://github.com/alirezarezvani/claude-skills/tree/HEAD/engineering"
+    },
+    {
+      "name": "hardware",
+      "displayName": "Hardware",
+      "version": "0.2.2",
+      "description": "use-kicad-cli: kiểm DRC/ERC và xuất file gia công từ KiCad. use-openscad: dựng mô hình 3D tham số bằng OpenSCAD.",
+      "author": {
+        "name": "Frad LEE"
+      },
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/fradser/dotclaude.git",
+        "path": "hardware"
+      },
+      "category": "Điện tử, cơ khí & sản xuất",
+      "homepage": "https://github.com/FradSer/dotclaude/tree/main/hardware"
+    },
+    {
+      "name": "diode-pcb",
+      "description": "5 skill. Thiết kế mạch in với công cụ pcb của Diode: nhập dự án KiCad, mô phỏng SPICE, tra registry linh kiện, quản lý thư viện, viết mạch bằng ngôn ngữ Zener.",
+      "author": {
+        "name": "Diode"
+      },
+      "homepage": "https://github.com/diodeinc/pcb/tree/HEAD/skills",
+      "category": "Điện tử, cơ khí & sản xuất",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/diodeinc/pcb.git",
+        "path": "skills",
+        "ref": "main",
+        "sha": "c9e82ec4fa94d58522ee000fb9bbaba84aaa745a"
+      },
+      "strict": false,
+      "skills": [
+        "./importing-kicad-projects",
+        "./librarian",
+        "./registry-search",
+        "./spice-sim",
+        "./zener-language"
+      ]
+    },
+    {
+      "name": "design",
+      "displayName": "Design",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/knowledge-work-plugins.git",
+        "path": "design"
+      },
+      "description": "Phê bình thiết kế, quản lý design system, viết UX copy, kiểm tra khả năng tiếp cận, tổng hợp nghiên cứu người dùng, bàn giao cho dev.",
+      "homepage": "https://github.com/anthropics/knowledge-work-plugins/tree/HEAD/design",
+      "category": "Design & sáng tạo"
+    },
+    {
+      "name": "canva",
+      "displayName": "Canva",
+      "description": "Tạo, sửa, đổi kích thước và kiểm nhận diện thương hiệu cho thiết kế Canva. Cần tài khoản Canva.",
+      "category": "Design & sáng tạo",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/canva-sdks/canva-skills.git",
+        "path": "plugins/canva",
+        "ref": "main",
+        "sha": "bfcbc681560f6031e9949ea52f81e20beb87e39e"
+      },
+      "homepage": "https://www.canva.com"
+    },
+    {
+      "name": "adobe-for-creativity",
+      "displayName": "Adobe",
+      "author": {
+        "name": "Adobe"
+      },
+      "description": "Công cụ Adobe Creative Cloud cho ảnh, vector, thiết kế, video: sửa hàng loạt, chuyển đổi cho từng nền tảng, chạy chuỗi thao tác nhiều bước.",
+      "category": "Design & sáng tạo",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/adobe/skills.git",
+        "path": "plugins/creative-cloud/adobe-for-creativity",
+        "ref": "main",
+        "sha": "0f487c9b1b98d8e62dfc80ee4d28b29f5471261f"
+      },
+      "homepage": "https://github.com/adobe/skills/tree/main/plugins/creative-cloud/adobe-for-creativity"
+    },
+    {
+      "name": "miro",
+      "displayName": "Miro",
+      "description": "Đọc bảng Miro, vẽ sơ đồ, sinh code từ bảng. Cần tài khoản Miro.",
+      "author": {
+        "name": "Miro"
+      },
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/miroapp/miro-ai.git",
+        "path": "claude-plugins/miro",
+        "ref": "main",
+        "sha": "b6408e1bdfe0c842f209d40b52e92caf118a4d39"
+      },
+      "category": "Design & sáng tạo"
+    },
+    {
+      "name": "figma",
+      "description": "Đọc file thiết kế, component và design token, chuyển thiết kế thành code. Cần tài khoản Figma.",
+      "category": "Design & sáng tạo",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/figma/mcp-server-guide.git",
+        "sha": "f2789420e7e8b4e2465dfeb1e12e1fc6a31397e5"
+      },
+      "homepage": "https://github.com/figma/mcp-server-guide"
+    },
+    {
+      "name": "superdesign",
+      "description": "Thiết kế hoặc làm lại UI và ảnh marketing trên canvas vô hạn: đọc codebase lấy bối cảnh, dựng design system, tạo nhiều phương án.",
+      "author": {
+        "name": "Superdesign dev, Inc."
+      },
+      "category": "Design & sáng tạo",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/superdesigndev/superdesign-skill.git",
+        "sha": "f9f05cd988c247dce6c072eaf9ac6b162f2ffc4b"
+      },
+      "homepage": "https://superdesign.dev"
+    },
+    {
+      "name": "example-skills",
+      "description": "Bộ skill mẫu của Anthropic: canvas-design (poster, ảnh), brand-guidelines, theme-factory, algorithmic-art, slack-gif-creator, web-artifacts-builder, skill-creator…",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/skills.git",
+        "path": "skills"
+      },
+      "strict": false,
+      "skills": [
+        "./algorithmic-art",
+        "./brand-guidelines",
+        "./canvas-design",
+        "./doc-coauthoring",
+        "./frontend-design",
+        "./internal-comms",
+        "./mcp-builder",
+        "./skill-creator",
+        "./slack-gif-creator",
+        "./theme-factory",
+        "./web-artifacts-builder",
+        "./webapp-testing"
+      ],
+      "homepage": "https://github.com/anthropics/skills/tree/HEAD/skills",
+      "category": "Design & sáng tạo"
+    },
+    {
+      "name": "marketing",
+      "displayName": "Marketing",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/knowledge-work-plugins.git",
+        "path": "marketing"
+      },
+      "description": "Soạn nội dung, lên kế hoạch chiến dịch, chuỗi email, SEO audit, brief đối thủ, rà giọng thương hiệu, báo cáo hiệu quả từng kênh.",
+      "homepage": "https://github.com/anthropics/knowledge-work-plugins/tree/HEAD/marketing",
+      "category": "Marketing & bán hàng"
+    },
+    {
+      "name": "sales",
+      "displayName": "Sales",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/knowledge-work-plugins.git",
+        "path": "sales"
+      },
+      "description": "Chuẩn bị cuộc gọi, tóm tắt và follow-up, nghiên cứu khách hàng, review deal và pipeline, dự báo doanh số. Làm việc với CRM, email, lịch, chat.",
+      "homepage": "https://github.com/anthropics/knowledge-work-plugins/tree/HEAD/sales",
+      "category": "Marketing & bán hàng"
+    },
+    {
+      "name": "brand-voice",
+      "displayName": "Brand Voice",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/knowledge-work-plugins.git",
+        "path": "partner-built/brand-voice"
+      },
+      "description": "Rút giọng thương hiệu từ tài liệu và hội thoại sẵn có, viết guideline áp dụng được, kiểm nội dung AI viết có đúng giọng không.",
+      "author": {
+        "name": "Tribe AI"
+      },
+      "homepage": "https://github.com/anthropics/knowledge-work-plugins/tree/HEAD/partner-built/brand-voice",
+      "category": "Marketing & bán hàng"
+    },
+    {
+      "name": "amazon-selling-partner",
+      "displayName": "Amazon Selling Partner",
+      "description": "Kết nối Amazon Seller Central: hỏi doanh số, tồn kho, hiệu quả listing, nhận gợi ý từ dữ liệu của chính bạn. Cần tài khoản người bán.",
+      "author": {
+        "name": "Amazon"
+      },
+      "category": "Marketing & bán hàng",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/amzn/selling-partner-agentic-toolkit.git",
+        "sha": "10573bac239b7062a476667eaa574d400335c70e"
+      },
+      "homepage": "https://github.com/amzn/selling-partner-agentic-toolkit"
+    },
+    {
+      "name": "marketing-skills",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/alirezarezvani/claude-skills.git",
+        "path": "marketing-skill"
+      },
+      "description": "Marketing chia 8 nhóm: nội dung, SEO và AEO, tối ưu chuyển đổi, kênh, tăng trưởng, phân tích thị trường, hỗ trợ bán hàng, tăng trưởng trên X. Kèm công cụ Python.",
+      "version": "2.14.10",
+      "author": {
+        "name": "Alireza Rezvani"
+      },
+      "keywords": [
+        "marketing",
+        "content",
+        "seo",
+        "cro",
+        "growth",
+        "sales",
+        "copywriting",
+        "email",
+        "social-media",
+        "paid-ads",
+        "twitter",
+        "x-twitter"
+      ],
+      "category": "Marketing & bán hàng",
+      "homepage": "https://github.com/alirezarezvani/claude-skills/tree/HEAD/marketing-skill"
+    },
+    {
+      "name": "business-growth-skills",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/alirezarezvani/claude-skills.git",
+        "path": "business-growth"
+      },
+      "description": "Tăng trưởng kinh doanh: customer success, kỹ sư bán hàng, revenue operations, soạn hợp đồng và đề xuất.",
+      "version": "2.14.7",
+      "author": {
+        "name": "Alireza Rezvani"
+      },
+      "keywords": [
+        "customer-success",
+        "sales-engineering",
+        "revenue-operations",
+        "business-growth",
+        "proposals"
+      ],
+      "category": "Marketing & bán hàng",
+      "homepage": "https://github.com/alirezarezvani/claude-skills/tree/HEAD/business-growth"
+    },
+    {
+      "name": "finance",
+      "displayName": "Finance",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/knowledge-work-plugins.git",
+        "path": "finance"
+      },
+      "description": "Bút toán, đối chiếu, lập báo cáo tài chính, phân tích chênh lệch, chuẩn bị kiểm toán, khóa sổ cuối tháng.",
+      "homepage": "https://github.com/anthropics/knowledge-work-plugins/tree/HEAD/finance",
+      "category": "Tài chính & kế toán"
+    },
+    {
+      "name": "intuit-quickbooks",
+      "displayName": "Intuit QuickBooks",
+      "description": "Đọc sức khỏe tài chính từ QuickBooks: lãi lỗ, dòng tiền, bảng cân đối, công nợ phải thu, so với ngành, chi phí lương. Cần tài khoản QuickBooks.",
+      "category": "Tài chính & kế toán",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/intuit/quickbooks-claude-plugin.git",
+        "sha": "c8daa17a64d4d0fdeabdf0516524f72549b6ad19"
+      },
+      "homepage": "https://github.com/intuit/quickbooks-claude-plugin"
+    },
+    {
+      "name": "financial-analysis",
+      "displayName": "Financial Analysis",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/financial-services.git",
+        "path": "plugins/vertical-plugins/financial-analysis"
+      },
+      "description": "Nền tảng của bộ Financial Services: mô hình DCF, comps, LBO, 3 báo cáo tài chính, phân tích cạnh tranh, kiểm tra deck.",
+      "homepage": "https://github.com/anthropics/financial-services/tree/HEAD/plugins/vertical-plugins/financial-analysis",
+      "category": "Tài chính & kế toán"
+    },
+    {
+      "name": "investment-banking",
+      "displayName": "Investment Banking",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/financial-services.git",
+        "path": "plugins/vertical-plugins/investment-banking"
+      },
+      "description": "Ngân hàng đầu tư: thông tin khách hàng và thị trường, dựng deck, phân tích tài chính, quản lý giao dịch.",
+      "homepage": "https://github.com/anthropics/financial-services/tree/HEAD/plugins/vertical-plugins/investment-banking",
+      "category": "Tài chính & kế toán"
+    },
+    {
+      "name": "equity-research",
+      "displayName": "Equity Research",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/financial-services.git",
+        "path": "plugins/vertical-plugins/equity-research"
+      },
+      "description": "Nghiên cứu cổ phiếu: phân tích kết quả kinh doanh, viết báo cáo khởi tạo.",
+      "homepage": "https://github.com/anthropics/financial-services/tree/HEAD/plugins/vertical-plugins/equity-research",
+      "category": "Tài chính & kế toán"
+    },
+    {
+      "name": "private-equity",
+      "displayName": "Private Equity",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/financial-services.git",
+        "path": "plugins/vertical-plugins/private-equity"
+      },
+      "description": "Quỹ đầu tư tư nhân: tìm công ty mục tiêu, quản lý CRM, tiếp cận nhà sáng lập.",
+      "homepage": "https://github.com/anthropics/financial-services/tree/HEAD/plugins/vertical-plugins/private-equity",
+      "category": "Tài chính & kế toán"
+    },
+    {
+      "name": "fund-admin",
+      "displayName": "Fund Administration",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/financial-services.git",
+        "path": "plugins/vertical-plugins/fund-admin"
+      },
+      "description": "Quản trị quỹ: đối chiếu sổ cái, truy chênh lệch, trích trước, roll-forward, khớp NAV.",
+      "homepage": "https://github.com/anthropics/financial-services/tree/HEAD/plugins/vertical-plugins/fund-admin",
+      "category": "Tài chính & kế toán"
+    },
+    {
+      "name": "pitch-agent",
+      "displayName": "Pitch Agent",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/financial-services.git",
+        "path": "plugins/agent-plugins/pitch-agent"
+      },
+      "description": "Dựng pitch deck từ comps, giao dịch tiền lệ và LBO.",
+      "homepage": "https://github.com/anthropics/financial-services/tree/HEAD/plugins/agent-plugins/pitch-agent",
+      "category": "Tài chính & kế toán"
+    },
+    {
+      "name": "market-researcher",
+      "displayName": "Market Researcher",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/financial-services.git",
+        "path": "plugins/agent-plugins/market-researcher"
+      },
+      "description": "Nghiên cứu thị trường: tổng quan ngành, bức tranh cạnh tranh, ý tưởng đầu tư.",
+      "homepage": "https://github.com/anthropics/financial-services/tree/HEAD/plugins/agent-plugins/market-researcher",
+      "category": "Tài chính & kế toán"
+    },
+    {
+      "name": "earnings-reviewer",
+      "displayName": "Earnings Reviewer",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/financial-services.git",
+        "path": "plugins/agent-plugins/earnings-reviewer"
+      },
+      "description": "Đọc cuộc gọi kết quả kinh doanh, cập nhật mô hình, viết nhận định.",
+      "homepage": "https://github.com/anthropics/financial-services/tree/HEAD/plugins/agent-plugins/earnings-reviewer",
+      "category": "Tài chính & kế toán"
+    },
+    {
+      "name": "meeting-prep-agent",
+      "displayName": "Meeting Prep Agent",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/financial-services.git",
+        "path": "plugins/agent-plugins/meeting-prep-agent"
+      },
+      "description": "Soạn tài liệu chuẩn bị trước buổi gặp khách hàng.",
+      "homepage": "https://github.com/anthropics/financial-services/tree/HEAD/plugins/agent-plugins/meeting-prep-agent",
+      "category": "Tài chính & kế toán"
+    },
+    {
+      "name": "model-builder",
+      "displayName": "Model Builder",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/financial-services.git",
+        "path": "plugins/agent-plugins/model-builder"
+      },
+      "description": "Dựng mô hình DCF, LBO, 3 báo cáo, comps ngay trong Excel.",
+      "homepage": "https://github.com/anthropics/financial-services/tree/HEAD/plugins/agent-plugins/model-builder",
+      "category": "Tài chính & kế toán"
+    },
+    {
+      "name": "gl-reconciler",
+      "displayName": "GL Reconciler",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/financial-services.git",
+        "path": "plugins/agent-plugins/gl-reconciler"
+      },
+      "description": "Đối chiếu sổ cái: tìm chênh lệch, truy nguyên nhân, chuyển người duyệt.",
+      "homepage": "https://github.com/anthropics/financial-services/tree/HEAD/plugins/agent-plugins/gl-reconciler",
+      "category": "Tài chính & kế toán"
+    },
+    {
+      "name": "kyc-screener",
+      "displayName": "KYC Screener",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/financial-services.git",
+        "path": "plugins/agent-plugins/kyc-screener"
+      },
+      "description": "KYC: đọc hồ sơ mở tài khoản, chạy bộ quy tắc, đánh dấu chỗ còn thiếu.",
+      "homepage": "https://github.com/anthropics/financial-services/tree/HEAD/plugins/agent-plugins/kyc-screener",
+      "category": "Tài chính & kế toán"
+    },
+    {
+      "name": "valuation-reviewer",
+      "displayName": "Valuation Reviewer",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/financial-services.git",
+        "path": "plugins/agent-plugins/valuation-reviewer"
+      },
+      "description": "Rà định giá: từ hồ sơ của GP đến định giá và báo cáo cho LP.",
+      "homepage": "https://github.com/anthropics/financial-services/tree/HEAD/plugins/agent-plugins/valuation-reviewer",
+      "category": "Tài chính & kế toán"
+    },
+    {
+      "name": "month-end-closer",
+      "displayName": "Month-End Closer",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/financial-services.git",
+        "path": "plugins/agent-plugins/month-end-closer"
+      },
+      "description": "Khóa sổ cuối tháng: trích trước, roll-forward, thuyết minh.",
+      "homepage": "https://github.com/anthropics/financial-services/tree/HEAD/plugins/agent-plugins/month-end-closer",
+      "category": "Tài chính & kế toán"
+    },
+    {
+      "name": "statement-auditor",
+      "displayName": "Statement Auditor",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/financial-services.git",
+        "path": "plugins/agent-plugins/statement-auditor"
+      },
+      "description": "Rà sao kê gửi nhà đầu tư (LP) trước khi phát hành.",
+      "homepage": "https://github.com/anthropics/financial-services/tree/HEAD/plugins/agent-plugins/statement-auditor",
+      "category": "Tài chính & kế toán"
+    },
+    {
+      "name": "lseg",
+      "displayName": "LSEG",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/financial-services.git",
+        "path": "plugins/partner-built/lseg"
+      },
+      "description": "Dùng dữ liệu LSEG: trái phiếu, đường cong lợi suất, FX carry, quyền chọn, dashboard vĩ mô.",
+      "homepage": "https://github.com/anthropics/financial-services/tree/HEAD/plugins/partner-built/lseg",
+      "category": "Tài chính & kế toán"
+    },
+    {
+      "name": "sp-global",
+      "displayName": "S&P Global",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/financial-services.git",
+        "path": "plugins/partner-built/spglobal"
+      },
+      "description": "Dùng dữ liệu S&P Global: tearsheet công ty, xem trước kết quả kinh doanh, tóm tắt giao dịch.",
+      "homepage": "https://github.com/anthropics/financial-services/tree/HEAD/plugins/partner-built/spglobal",
+      "category": "Tài chính & kế toán"
+    },
+    {
+      "name": "finance-skills",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/alirezarezvani/claude-skills.git",
+        "path": "finance"
+      },
+      "description": "Tài chính: phân tích chỉ số, định giá DCF, ngân sách và dự báo; chỉ số SaaS (ARR, MRR, churn, CAC, LTV); tư vấn đầu tư; khóa sổ cuối tháng.",
+      "version": "2.14.6",
+      "author": {
+        "name": "Alireza Rezvani"
+      },
+      "keywords": [
+        "finance",
+        "dcf",
+        "valuation",
+        "budgeting",
+        "forecasting",
+        "saas",
+        "metrics",
+        "arr",
+        "mrr",
+        "churn",
+        "ltv",
+        "cac"
+      ],
+      "category": "Tài chính & kế toán",
+      "homepage": "https://github.com/alirezarezvani/claude-skills/tree/HEAD/finance"
+    },
+    {
+      "name": "legal",
+      "displayName": "Legal",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/knowledge-work-plugins.git",
+        "path": "legal"
+      },
+      "description": "Rà soát hợp đồng, phân loại NDA, quy trình tuân thủ cho pháp chế nội bộ, soạn tóm tắt pháp lý.",
+      "homepage": "https://github.com/anthropics/knowledge-work-plugins/tree/HEAD/legal",
+      "category": "Pháp lý"
+    },
+    {
+      "name": "commercial-legal",
+      "displayName": "Commercial Legal",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/claude-for-legal.git",
+        "path": "commercial-legal"
+      },
+      "description": "Hợp đồng thương mại: hợp đồng nhà cung cấp, NDA, SaaS, theo dõi hạn gia hạn và hủy.",
+      "author": {
+        "name": "Anthropic"
+      },
+      "homepage": "https://github.com/anthropics/claude-for-legal/tree/HEAD/commercial-legal",
+      "category": "Pháp lý"
+    },
+    {
+      "name": "privacy-legal",
+      "displayName": "Privacy Legal",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/claude-for-legal.git",
+        "path": "privacy-legal"
+      },
+      "description": "Dữ liệu cá nhân: đánh giá tác động (PIA), thỏa thuận xử lý dữ liệu (DPA), yêu cầu truy cập dữ liệu (DSAR).",
+      "author": {
+        "name": "Anthropic"
+      },
+      "homepage": "https://github.com/anthropics/claude-for-legal/tree/HEAD/privacy-legal",
+      "category": "Pháp lý"
+    },
+    {
+      "name": "product-legal",
+      "displayName": "Product Legal",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/claude-for-legal.git",
+        "path": "product-legal"
+      },
+      "description": "Pháp lý sản phẩm: rủi ro khi ra mắt, kiểm các tuyên bố quảng cáo.",
+      "author": {
+        "name": "Anthropic"
+      },
+      "homepage": "https://github.com/anthropics/claude-for-legal/tree/HEAD/product-legal",
+      "category": "Pháp lý"
+    },
+    {
+      "name": "corporate-legal",
+      "displayName": "Corporate Legal",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/claude-for-legal.git",
+        "path": "corporate-legal"
+      },
+      "description": "Doanh nghiệp: thẩm định M&A, biên bản hội đồng quản trị.",
+      "author": {
+        "name": "Anthropic"
+      },
+      "homepage": "https://github.com/anthropics/claude-for-legal/tree/HEAD/corporate-legal",
+      "category": "Pháp lý"
+    },
+    {
+      "name": "employment-legal",
+      "displayName": "Employment Legal",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/claude-for-legal.git",
+        "path": "employment-legal"
+      },
+      "description": "Luật lao động theo từng bang của Mỹ.",
+      "author": {
+        "name": "Anthropic"
+      },
+      "homepage": "https://github.com/anthropics/claude-for-legal/tree/HEAD/employment-legal",
+      "category": "Pháp lý"
+    },
+    {
+      "name": "regulatory-legal",
+      "displayName": "Regulatory Legal",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/claude-for-legal.git",
+        "path": "regulatory-legal"
+      },
+      "description": "Theo dõi quy định mới.",
+      "author": {
+        "name": "Anthropic"
+      },
+      "homepage": "https://github.com/anthropics/claude-for-legal/tree/HEAD/regulatory-legal",
+      "category": "Pháp lý"
+    },
+    {
+      "name": "ai-governance-legal",
+      "displayName": "AI Governance Legal",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/claude-for-legal.git",
+        "path": "ai-governance-legal"
+      },
+      "description": "Quản trị AI: rà use case AI, điều khoản trong hợp đồng nhà cung cấp AI.",
+      "author": {
+        "name": "Anthropic"
+      },
+      "homepage": "https://github.com/anthropics/claude-for-legal/tree/HEAD/ai-governance-legal",
+      "category": "Pháp lý"
+    },
+    {
+      "name": "litigation-legal",
+      "displayName": "Litigation Legal",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/claude-for-legal.git",
+        "path": "litigation-legal"
+      },
+      "description": "Tranh tụng: claim chart, niên biểu vụ việc, chuẩn bị lấy lời khai.",
+      "author": {
+        "name": "Anthropic"
+      },
+      "homepage": "https://github.com/anthropics/claude-for-legal/tree/HEAD/litigation-legal",
+      "category": "Pháp lý"
+    },
+    {
+      "name": "law-student",
+      "displayName": "Law Student",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/claude-for-legal.git",
+        "path": "law-student"
+      },
+      "description": "Cho sinh viên luật: hỏi đáp kiểu Socratic, tóm tắt án lệ, ôn thi.",
+      "author": {
+        "name": "Anthropic"
+      },
+      "homepage": "https://github.com/anthropics/claude-for-legal/tree/HEAD/law-student",
+      "category": "Pháp lý"
+    },
+    {
+      "name": "legal-clinic",
+      "displayName": "Legal Clinic",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/claude-for-legal.git",
+        "path": "legal-clinic"
+      },
+      "description": "Cho phòng tư vấn pháp lý của trường luật.",
+      "author": {
+        "name": "Anthropic"
+      },
+      "homepage": "https://github.com/anthropics/claude-for-legal/tree/HEAD/legal-clinic",
+      "category": "Pháp lý"
+    },
+    {
+      "name": "legal-builder-hub",
+      "displayName": "Legal Builder Hub",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/claude-for-legal.git",
+        "path": "legal-builder-hub"
+      },
+      "description": "Tìm, đánh giá và cài skill pháp lý của cộng đồng, có bước rà bảo mật.",
+      "author": {
+        "name": "Anthropic"
+      },
+      "homepage": "https://github.com/anthropics/claude-for-legal/tree/HEAD/legal-builder-hub",
+      "category": "Pháp lý"
+    },
+    {
+      "name": "ip-legal",
+      "displayName": "IP Legal",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/claude-for-legal.git",
+        "path": "ip-legal"
+      },
+      "description": "Sở hữu trí tuệ: nhãn hiệu, tự do vận hành (FTO), sáng chế, thư cảnh báo và DMCA, giấy phép mã nguồn mở.",
+      "author": {
+        "name": "Anthropic"
+      },
+      "homepage": "https://github.com/anthropics/claude-for-legal/tree/HEAD/ip-legal",
+      "category": "Pháp lý"
+    },
+    {
+      "name": "cocounsel-legal",
+      "displayName": "CoCounsel Legal",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/claude-for-legal.git",
+        "path": "external_plugins/cocounsel-legal"
+      },
+      "description": "Westlaw Deep Research của Thomson Reuters. Cần tài khoản Thomson Reuters.",
+      "author": {
+        "name": "Thomson Reuters"
+      },
+      "homepage": "https://github.com/anthropics/claude-for-legal/tree/HEAD/external_plugins/cocounsel-legal",
+      "category": "Pháp lý"
+    },
+    {
+      "name": "product-management",
+      "displayName": "Product Management",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/knowledge-work-plugins.git",
+        "path": "product-management"
+      },
+      "description": "Viết spec tính năng, lập roadmap, lên sprint, brainstorm, tổng hợp nghiên cứu người dùng, cập nhật cho các bên liên quan, theo dõi đối thủ.",
+      "homepage": "https://github.com/anthropics/knowledge-work-plugins/tree/HEAD/product-management",
+      "category": "Quản lý & vận hành"
+    },
+    {
+      "name": "operations",
+      "displayName": "Operations",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/knowledge-work-plugins.git",
+        "path": "operations"
+      },
+      "description": "Quản lý nhà cung cấp, viết tài liệu quy trình, quản lý thay đổi, hoạch định năng lực, theo dõi tuân thủ.",
+      "homepage": "https://github.com/anthropics/knowledge-work-plugins/tree/HEAD/operations",
+      "category": "Quản lý & vận hành"
+    },
+    {
+      "name": "human-resources",
+      "displayName": "Human Resources",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/knowledge-work-plugins.git",
+        "path": "human-resources"
+      },
+      "description": "Tuyển dụng, onboarding, đánh giá hiệu suất, phân tích lương thưởng, tư vấn chính sách nhân sự.",
+      "homepage": "https://github.com/anthropics/knowledge-work-plugins/tree/HEAD/human-resources",
+      "category": "Quản lý & vận hành"
+    },
+    {
+      "name": "customer-support",
+      "displayName": "Customer Support",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/knowledge-work-plugins.git",
+        "path": "customer-support"
+      },
+      "description": "Phân loại ticket, soạn câu trả lời, chuyển cấp xử lý, tìm bối cảnh khách hàng, biến ca đã xử lý thành bài tự trợ giúp.",
+      "homepage": "https://github.com/anthropics/knowledge-work-plugins/tree/HEAD/customer-support",
+      "category": "Quản lý & vận hành"
+    },
+    {
+      "name": "small-business",
+      "displayName": "Small Business",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/knowledge-work-plugins.git",
+        "path": "small-business"
+      },
+      "description": "Quy trình dựng sẵn để vận hành và phát triển doanh nghiệp nhỏ. Bước nào đụng đến tiền cũng chờ bạn duyệt.",
+      "homepage": "https://github.com/anthropics/knowledge-work-plugins/tree/HEAD/small-business",
+      "category": "Quản lý & vận hành"
+    },
+    {
+      "name": "c-level-skills",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/alirezarezvani/claude-skills.git",
+        "path": "c-level-advisor"
+      },
+      "description": "Cố vấn cấp lãnh đạo: hội đồng quản trị ảo gồm CEO, CTO, COO, CPO, CMO, CFO, CRO, CISO, CHRO, thêm cố vấn pháp lý, dữ liệu, AI.",
+      "version": "2.14.9",
+      "author": {
+        "name": "Alireza Rezvani"
+      },
+      "keywords": [
+        "ceo",
+        "cto",
+        "cfo",
+        "executive",
+        "strategy",
+        "leadership",
+        "board",
+        "advisory",
+        "founder-mode",
+        "boardroom"
+      ],
+      "category": "Quản lý & vận hành",
+      "homepage": "https://github.com/alirezarezvani/claude-skills/tree/HEAD/c-level-advisor"
+    },
+    {
+      "name": "product-skills",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/alirezarezvani/claude-skills.git",
+        "path": "product-team"
+      },
+      "description": "Quản lý sản phẩm kèm công cụ Python: vòng discovery liên tục và bộ công cụ cho product manager.",
+      "version": "2.14.8",
+      "author": {
+        "name": "Alireza Rezvani"
+      },
+      "keywords": [
+        "product",
+        "pm",
+        "agile",
+        "ux",
+        "design-system",
+        "competitive-analysis",
+        "landing-page",
+        "saas",
+        "analytics",
+        "experimentation",
+        "discovery",
+        "discovery",
+        "roadmap",
+        "apple-hig",
+        "design-guidelines"
+      ],
+      "category": "Quản lý & vận hành",
+      "homepage": "https://github.com/alirezarezvani/claude-skills/tree/HEAD/product-team"
+    },
+    {
+      "name": "pm-skills",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/alirezarezvani/claude-skills.git",
+        "path": "project-management"
+      },
+      "description": "Quản lý dự án kèm công cụ Python: lấy dữ liệu Jira, đo luồng Kanban, dự báo tiến độ bằng Monte Carlo.",
+      "version": "2.14.6",
+      "author": {
+        "name": "Alireza Rezvani"
+      },
+      "keywords": [
+        "project-management",
+        "scrum",
+        "agile",
+        "jira",
+        "confluence",
+        "atlassian"
+      ],
+      "category": "Quản lý & vận hành",
+      "homepage": "https://github.com/alirezarezvani/claude-skills/tree/HEAD/project-management"
+    },
+    {
+      "name": "learn-with-coursera",
+      "displayName": "Learn with Coursera",
+      "description": "Hỏi 3 câu (chủ đề, trình độ, hình thức học) rồi tìm trong kho Coursera để đưa ra lộ trình học.",
+      "category": "Giáo dục",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/coursera/skills.git",
+        "path": "skills",
+        "ref": "main",
+        "sha": "ac28fd6ebf8584e3ee196159bd6d4514fa07de0f"
+      },
+      "strict": false,
+      "skills": [
+        "./learn-with-coursera"
+      ]
+    },
+    {
+      "name": "bio-research",
+      "displayName": "Bio Research",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/knowledge-work-plugins.git",
+        "path": "bio-research"
+      },
+      "description": "Kết nối công cụ và cơ sở dữ liệu nghiên cứu tiền lâm sàng: tra tài liệu, phân tích hệ gen, xếp hạng đích điều trị.",
+      "homepage": "https://github.com/anthropics/knowledge-work-plugins/tree/HEAD/bio-research",
+      "category": "Khoa học & y sinh"
+    },
+    {
+      "name": "ra-qm-skills",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/alirezarezvani/claude-skills.git",
+        "path": "ra-qm-team"
+      },
+      "description": "Quy chuẩn và quản lý chất lượng cho thiết bị y tế: ISO 13485, MDR 2017/745, FDA 510(k)/PMA, GDPR, ISO 27001, CAPA, quản lý rủi ro, đánh giá lâm sàng, SOC 2.",
+      "version": "2.14.9",
+      "author": {
+        "name": "Alireza Rezvani"
+      },
+      "keywords": [
+        "regulatory",
+        "quality",
+        "compliance",
+        "iso-13485",
+        "mdr",
+        "fda",
+        "gdpr",
+        "medtech"
+      ],
+      "category": "Khoa học & y sinh",
+      "homepage": "https://github.com/alirezarezvani/claude-skills/tree/HEAD/ra-qm-team"
+    },
+    {
+      "name": "scientific-agent-skills",
+      "description": "177 skill. Nghiên cứu khoa học: tin sinh học và hệ gen, protein, hóa học, ảnh y khoa, máy tính lượng tử, học máy, vẽ hình khoa học, tra cứu tài liệu. Rất nặng: chiếm gần 20 nghìn token ngữ cảnh mỗi phiên, chỉ cài khi cần.",
+      "author": {
+        "name": "K-Dense"
+      },
+      "homepage": "https://github.com/K-Dense-AI/scientific-agent-skills/tree/HEAD/skills",
+      "category": "Khoa học & y sinh",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/K-Dense-AI/scientific-agent-skills.git",
+        "path": "skills",
+        "ref": "main",
+        "sha": "a25cf9ec00e2745d03f8704acf6f6919694ccd9a"
+      },
+      "strict": false,
+      "skills": [
+        "./13c-metabolic-flux",
+        "./adaptyv",
+        "./aeon",
+        "./alphagenome",
+        "./analytical-method-validation",
+        "./anndata",
+        "./arbor",
+        "./arboreto",
+        "./astropy",
+        "./autoskill",
+        "./benchling-integration",
+        "./bgpt-paper-search",
+        "./bids",
+        "./biopython",
+        "./bioservices",
+        "./bulk-rnaseq",
+        "./cantera",
+        "./cellprofiler",
+        "./cellxgene-census",
+        "./cirq",
+        "./citation-management",
+        "./clinical-decision-support",
+        "./clinical-reports",
+        "./cobrapy",
+        "./consciousness-council",
+        "./dask",
+        "./database-lookup",
+        "./datalad",
+        "./datamol",
+        "./deepchem",
+        "./deepspot-m",
+        "./deeptools",
+        "./depmap",
+        "./dhdna-profiler",
+        "./diffdock",
+        "./dnanexus-integration",
+        "./esm",
+        "./etetoolkit",
+        "./exa-search",
+        "./experimental-design",
+        "./exploratory-data-analysis",
+        "./fictiv",
+        "./flowio",
+        "./flowkit",
+        "./fluidsim",
+        "./folklore-variant-evidence",
+        "./generate-image",
+        "./geniml",
+        "./genomic-coordinates",
+        "./genomic-intelligence",
+        "./geomaster",
+        "./geopandas",
+        "./get-available-resources",
+        "./gget",
+        "./ginkgo-cloud-lab",
+        "./glycoengineering",
+        "./gtars",
+        "./histolab",
+        "./hugging-science",
+        "./hypogenic",
+        "./hypothesis-generation",
+        "./imaging-data-commons",
+        "./infographics",
+        "./iso-standards-readiness",
+        "./lab-hardware-cad",
+        "./labarchive-integration",
+        "./lamindb",
+        "./latchbio-integration",
+        "./latex-posters",
+        "./liteparse",
+        "./literature-review",
+        "./mageck",
+        "./marine-carbonate-chemistry",
+        "./markdown-mermaid-writing",
+        "./market-research-reports",
+        "./markitdown",
+        "./matchms",
+        "./matlab",
+        "./matplotlib",
+        "./medchem",
+        "./modal",
+        "./molecular-dynamics",
+        "./molfeat",
+        "./ncats-arax",
+        "./networkx",
+        "./neurokit2",
+        "./neuropixels-analysis",
+        "./nextflow",
+        "./nmrglue",
+        "./nwb-conversion",
+        "./omero-integration",
+        "./onekgpd",
+        "./ontology-term-resolution",
+        "./open-notebook",
+        "./openpiv",
+        "./opentrons-integration",
+        "./optimize-for-gpu",
+        "./pacsomatic",
+        "./paper-lookup",
+        "./paperclip",
+        "./paperzilla",
+        "./parallel-web",
+        "./pathml",
+        "./pathogen-variant-surveillance",
+        "./pathway-enrichment",
+        "./peer-review",
+        "./pennylane",
+        "./phylogenetics",
+        "./pi-agent",
+        "./pkpd-modeling",
+        "./polars",
+        "./polars-bio",
+        "./pptx-posters",
+        "./primekg",
+        "./primer-design",
+        "./protocolsio-integration",
+        "./pufferlib",
+        "./pybamm",
+        "./pycalphad",
+        "./pydeseq2",
+        "./pydicom",
+        "./pyhealth",
+        "./pylabrobot",
+        "./pymatgen",
+        "./pymc",
+        "./pymoo",
+        "./pyopenms",
+        "./pysam",
+        "./pytdc",
+        "./pytorch-lightning",
+        "./pyzotero",
+        "./qiime2-amplicon",
+        "./qiskit",
+        "./qutip",
+        "./rdkit",
+        "./relion",
+        "./relsa-severity-assessment",
+        "./research-grants",
+        "./research-lookup",
+        "./rowan",
+        "./scanpy",
+        "./scholar-evaluation",
+        "./scientific-brainstorming",
+        "./scientific-critical-thinking",
+        "./scientific-schematics",
+        "./scientific-slides",
+        "./scientific-visualization",
+        "./scientific-writing",
+        "./scikit-bio",
+        "./scikit-learn",
+        "./scikit-survival",
+        "./scvelo",
+        "./scvi-tools",
+        "./seaborn",
+        "./shap",
+        "./simpy",
+        "./stable-baselines3",
+        "./statistical-analysis",
+        "./statistical-power",
+        "./statsmodels",
+        "./sympy",
+        "./tamarind",
+        "./tellurium",
+        "./tiledbvcf",
+        "./timesfm-forecasting",
+        "./torch-geometric",
+        "./torchdrug",
+        "./transformers",
+        "./treatment-plans",
+        "./umap-learn",
+        "./uncertainty-and-units",
+        "./usfiscaldata",
+        "./vaex",
+        "./venue-templates",
+        "./waypoint-bio",
+        "./what-if-oracle",
+        "./zarr-python"
+      ]
+    },
+    {
+      "name": "productivity",
+      "displayName": "Productivity",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/knowledge-work-plugins.git",
+        "path": "productivity"
+      },
+      "description": "Quản lý việc, lên kế hoạch trong ngày, ghi nhớ bối cảnh công việc; đồng bộ với lịch, email, chat.",
+      "homepage": "https://github.com/anthropics/knowledge-work-plugins/tree/HEAD/productivity",
+      "category": "Văn phòng & đa ngành"
+    },
+    {
+      "name": "enterprise-search",
+      "displayName": "Enterprise Search",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/knowledge-work-plugins.git",
+        "path": "enterprise-search"
+      },
+      "description": "Tìm trong email, chat, tài liệu và wiki của công ty từ một chỗ.",
+      "homepage": "https://github.com/anthropics/knowledge-work-plugins/tree/HEAD/enterprise-search",
+      "category": "Văn phòng & đa ngành"
+    },
+    {
+      "name": "document-skills",
+      "description": "Đọc, tạo và chỉnh file Word, Excel, PowerPoint, PDF. Có ích cho gần như mọi nghề.",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/skills.git",
+        "path": "skills"
+      },
+      "strict": false,
+      "skills": [
+        "./xlsx",
+        "./docx",
+        "./pptx",
+        "./pdf"
+      ],
+      "homepage": "https://github.com/anthropics/skills/tree/HEAD/skills",
+      "category": "Văn phòng & đa ngành"
+    }
+  ]
+}
