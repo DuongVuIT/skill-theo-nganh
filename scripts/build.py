@@ -3,9 +3,10 @@
 
   python3 -I scripts/build.py          lấy lại danh sách từ kho gốc (cần mạng và git)
   python3 -I scripts/build.py check    cài thử từng plugin vào thư mục cấu hình tạm, ghi số skill vào scripts/inventory.json (cần Claude Code)
+  python3 -I scripts/build.py check <tên>...   chỉ cài thử các plugin này, giữ nguyên số liệu của plugin khác
   python3 -I scripts/build.py readme   chỉ dựng lại README.md, không cần mạng
 
-Thêm hoặc bớt plugin: sửa UP hoặc WRAP bên dưới, chạy lệnh đầu rồi lệnh check.
+Thêm hoặc bớt plugin: sửa UP hoặc WRAP bên dưới, chạy lệnh đầu rồi lệnh check (hoặc check kèm tên các plugin vừa thêm).
 """
 import json
 import os
@@ -35,6 +36,8 @@ CATS = {
     'quan-ly': 'Quản lý & vận hành',
     'giao-duc': 'Giáo dục',
     'khoa-hoc': 'Khoa học & y sinh',
+    'y-khoa': 'Y khoa & y tế',
+    'duoc': 'Dược & phát triển thuốc',
     'da-nganh': 'Văn phòng & đa ngành',
 }
 
@@ -49,7 +52,9 @@ LOOK = {
     'phap-ly': ('⚖️', ['legal', 'commercial-legal', 'law-student']),
     'quan-ly': ('📋', ['product-management', 'human-resources', 'customer-support']),
     'giao-duc': ('🎓', ['learn-with-coursera']),
-    'khoa-hoc': ('🔬', ['bio-research', 'ra-qm-skills']),
+    'khoa-hoc': ('🔬', ['bio-research']),
+    'y-khoa': ('🩺', ['healthcare', 'biomcp']),
+    'duoc': ('💊', ['tooluniverse']),
     'da-nganh': ('🗂️', ['document-skills', 'productivity']),
 }
 
@@ -77,6 +82,7 @@ UP = {
         'small-business': ('quan-ly', 'Quy trình dựng sẵn để vận hành và phát triển doanh nghiệp nhỏ. Bước nào đụng đến tiền cũng chờ bạn duyệt.'),
         'learn-with-coursera': ('giao-duc', 'Hỏi 3 câu (chủ đề, trình độ, hình thức học) rồi tìm trong kho Coursera để đưa ra lộ trình học.'),
         'bio-research': ('khoa-hoc', 'Kết nối công cụ và cơ sở dữ liệu nghiên cứu tiền lâm sàng: tra tài liệu, phân tích hệ gen, xếp hạng đích điều trị.'),
+        'maven-bio': ('duoc', 'Nghiên cứu ngành dược sinh học trên đồ thị tri thức của Maven Bio: pipeline của đối thủ, bức tranh theo chỉ định điều trị, hồ sơ từng hoạt chất, thương vụ và gọi vốn, tổng hợp bằng chứng có dẫn nguồn FDA, SEC, thử nghiệm lâm sàng. Cần tài khoản Maven Bio.'),
         'productivity': ('da-nganh', 'Quản lý việc, lên kế hoạch trong ngày, ghi nhớ bối cảnh công việc; đồng bộ với lịch, email, chat.'),
         'enterprise-search': ('da-nganh', 'Tìm trong email, chat, tài liệu và wiki của công ty từ một chỗ.'),
     },
@@ -125,6 +131,24 @@ UP = {
         'ip-legal': ('phap-ly', 'Sở hữu trí tuệ: nhãn hiệu, tự do vận hành (FTO), sáng chế, thư cảnh báo và DMCA, giấy phép mã nguồn mở.'),
         'cocounsel-legal': ('phap-ly', 'Westlaw Deep Research của Thomson Reuters. Cần tài khoản Thomson Reuters.'),
     },
+    'anthropics/healthcare': {
+        'healthcare': ('y-khoa', 'Bộ Claude for Healthcare: duyệt prior auth (xin tiền phê duyệt bảo hiểm), gán mã bệnh ICD-10-CM và mã thủ thuật CPT/HCPCS, trích dữ liệu từ ghi chú lâm sàng, soạn đề cương thử nghiệm lâm sàng, đọc hồ sơ bệnh án qua FHIR, sàng lọc gian lận bảo hiểm. Kết nối sẵn PubMed, ClinicalTrials.gov, ICD-10, CMS, NPI. Phần bảo hiểm và mã hóa theo hệ thống Mỹ.'),
+    },
+    'anthropics/life-sciences': {
+        'binder-gauntlet': ('duoc', 'Kiểm chứng protein gắn đích (binder) thiết kế mới trước khi đặt tổng hợp DNA: dự đoán lại cấu trúc bằng công cụ độc lập, chạy đối chứng, đánh giá khả năng phát triển thành thuốc (developability), xuất hồ sơ ghi rõ phần nào chưa kiểm. Mọi kết quả đều là dự đoán tính toán.'),
+    },
+    'IHTSDO/snowstorm-mcp-server': {
+        'snowstorm-mcp-server': ('y-khoa', 'Tra bộ thuật ngữ lâm sàng SNOMED CT: tìm khái niệm, kiểm mã, duyệt cây phân cấp, mở rộng value set, đủ các bản quốc tế, Mỹ, Anh, Úc. Máy chủ do chính SNOMED International vận hành, không cần cài. Dùng để tra cứu và tìm hiểu; đưa vào sản phẩm thì cần giấy phép SNOMED CT.'),
+    },
+    'genomoncology/biomcp': {
+        'biomcp': ('y-khoa', 'Tra bằng chứng y sinh từ một chỗ: bài báo PubMed, thử nghiệm lâm sàng, gen và biến thể (ClinVar), thuốc, bệnh, pathway, protein. Chỉ đọc dữ liệu, không ghi gì. Cần cài biomcp-cli.'),
+    },
+    'mims-harvard/ToolUniverse': {
+        'tooluniverse': ('duoc', 'Hơn 2.700 công cụ tra cứu (PubMed, PubChem, FAERS, ClinicalTrials.gov, UniProt…) kèm skill cho nghiên cứu thuốc, tương tác thuốc, phát hiện biến cố bất lợi, dự đoán ADMET, hồ sơ đăng ký thuốc, tái định vị thuốc, thẩm định đích tác dụng, cả hệ gen và lâm sàng. Cần cài uv. Hook chạy một lần để xóa skill tooluniverse-* cài kiểu cũ trong ~/.claude/skills (nếu có). Rất nặng: chiếm khoảng 24 nghìn token ngữ cảnh mỗi phiên, chỉ cài khi cần.'),
+    },
+    'novainsilico/jinko-skills': {
+        'jinko': ('duoc', 'Dược lý hệ thống định lượng (QSP) trên nền tảng Jinkō: gom bằng chứng và dữ liệu, dựng và hiệu chỉnh mô hình, phân tích độ nhạy, tạo quần thể ảo, mô phỏng thử nghiệm lâm sàng in silico. Cần tài khoản Jinkō.'),
+    },
     'fradser/dotclaude': {
         'hardware': ('dien-tu', 'use-kicad-cli: kiểm DRC/ERC và xuất file gia công từ KiCad. use-openscad: dựng mô hình 3D tham số bằng OpenSCAD.'),
     },
@@ -137,7 +161,7 @@ UP = {
         'c-level-skills': ('quan-ly', 'Cố vấn cấp lãnh đạo: hội đồng quản trị ảo gồm CEO, CTO, COO, CPO, CMO, CFO, CRO, CISO, CHRO, thêm cố vấn pháp lý, dữ liệu, AI.'),
         'product-skills': ('quan-ly', 'Quản lý sản phẩm kèm công cụ Python: vòng discovery liên tục và bộ công cụ cho product manager.'),
         'pm-skills': ('quan-ly', 'Quản lý dự án kèm công cụ Python: lấy dữ liệu Jira, đo luồng Kanban, dự báo tiến độ bằng Monte Carlo.'),
-        'ra-qm-skills': ('khoa-hoc', 'Quy chuẩn và quản lý chất lượng cho thiết bị y tế: ISO 13485, MDR 2017/745, FDA 510(k)/PMA, GDPR, ISO 27001, CAPA, quản lý rủi ro, đánh giá lâm sàng, SOC 2.'),
+        'ra-qm-skills': ('y-khoa', 'Quy chuẩn và quản lý chất lượng cho thiết bị y tế: ISO 13485, MDR 2017/745, FDA 510(k)/PMA, GDPR, ISO 27001, CAPA, quản lý rủi ro, đánh giá lâm sàng, SOC 2.'),
     },
 }
 
@@ -154,6 +178,8 @@ WRAP = [
     ('ddc-open-construction-erp', DDC, '6_OpenConstructionERP', None, 'xay-dung', 'DataDrivenConstruction', 'Làm việc với nền tảng OpenConstructionERP: bóc khối lượng từ BIM, dự toán và BOQ, đấu thầu, tiến độ 4D/5D, hiện trường, kết nối MCP.'),
     ('diode-pcb', 'diodeinc/pcb', 'skills', None, 'dien-tu', 'Diode', 'Thiết kế mạch in với công cụ pcb của Diode: nhập dự án KiCad, mô phỏng SPICE, tra registry linh kiện, quản lý thư viện, viết mạch bằng ngôn ngữ Zener.'),
     ('scientific-agent-skills', 'K-Dense-AI/scientific-agent-skills', 'skills', None, 'khoa-hoc', 'K-Dense', 'Nghiên cứu khoa học: tin sinh học và hệ gen, protein, hóa học, ảnh y khoa, máy tính lượng tử, học máy, vẽ hình khoa học, tra cứu tài liệu. Rất nặng: chiếm gần 20 nghìn token ngữ cảnh mỗi phiên, chỉ cài khi cần.'),
+    # plugin.json gốc khai agents là thư mục, Claude Code không nhận nên cài lỗi; bọc riêng phần skill
+    ('nlmixr2llm', 'nlmixr2/nlmixr2llm', 'inst/skills', None, 'duoc', 'nlmixr2', 'Mô hình dược động học, dược lực học quần thể (popPK/PD) với hệ nlmixr2 trong R: mô phỏng, ước lượng tham số, thiết kế nghiên cứu tối ưu, viết báo cáo, chuyển mô hình qua lại với NONMEM và Monolix. Cần R và các gói nlmixr2.'),
 ]
 
 def get(url):
@@ -185,17 +211,19 @@ def from_upstream(repo, picks):
         p = dict(have[name])  # KeyError: kho gốc đã đổi tên hoặc bỏ plugin này
         if isinstance(p['source'], str):  # đường dẫn trong kho gốc -> trỏ thẳng vào thư mục đó
             path = '/'.join(x for x in p['source'].split('/') if x not in ('', '.'))
+            page = path  # thư mục README trỏ tới
             if isinstance(p.get('skills'), list):
                 # Trỏ vào thư mục cha chung của các skill được liệt kê, nếu không Claude Code
                 # nạp luôn mọi skill trong skills/ của kho (document-skills thành 19 skill thay vì 4).
                 sk = [posixpath.normpath(s) for s in p['skills']]
                 base = posixpath.commonpath([posixpath.dirname(s) for s in sk])
+                page = posixpath.join(path, posixpath.commonpath(sk))  # plugin một skill: trỏ thẳng vào thư mục skill
                 if base:
                     path = posixpath.join(path, base)
                     p['skills'] = ['./' + posixpath.relpath(s, base) for s in sk]
             url = f'https://github.com/{repo}.git'
             p['source'] = {'source': 'git-subdir', 'url': url, 'path': path} if path else {'source': 'url', 'url': url}
-            p.setdefault('homepage', f'https://github.com/{repo}' + (f'/tree/HEAD/{path}' if path else ''))
+            p.setdefault('homepage', f'https://github.com/{repo}' + (f'/tree/HEAD/{page}' if page else ''))
         if isinstance(p.get('author'), dict):
             p['author'] = {k: v for k, v in p['author'].items() if k != 'email'}
         p.update(description=desc, category=CATS[cat])
@@ -236,7 +264,8 @@ def by(p):
     org = p['source']['url'].split('/')[3]  # chủ kho trên GitHub khi kho gốc không ghi tác giả
     name = (a if isinstance(a, str) else (a or {}).get('name')) or org
     return {'anthropics': 'Anthropic', 'Unity-Technologies': 'Unity', 'expo': 'Expo', 'canva-sdks': 'Canva', 'figma': 'Figma',
-            'Superdesign dev, Inc.': 'Superdesign', 'intuit': 'Intuit', 'coursera': 'Coursera'}.get(name, name)
+            'Superdesign dev, Inc.': 'Superdesign', 'intuit': 'Intuit', 'coursera': 'Coursera', 'IHTSDO': 'SNOMED International',
+            'mims-harvard': 'Zitnik Lab, Harvard', 'MavenBio': 'Maven Bio', 'novainsilico': 'Nova In Silico'}.get(name, name)
 
 
 def main():
@@ -249,7 +278,7 @@ def main():
     market = {
         'name': NAME,
         'owner': {'name': OWNER},
-        'metadata': {'description': 'Plugin Claude Code theo ngành nghề, gom từ kho gốc của từng tác giả: xây dựng, phần mềm, điện tử, design, marketing, tài chính, pháp lý, quản lý, giáo dục, khoa học.'},
+        'metadata': {'description': 'Plugin Claude Code theo ngành nghề, gom từ kho gốc của từng tác giả: xây dựng, phần mềm, điện tử, design, marketing, tài chính, pháp lý, quản lý, giáo dục, khoa học, y khoa, dược.'},
         'plugins': plugins,
     }
     MARKET.parent.mkdir(exist_ok=True)
@@ -291,6 +320,18 @@ def write_readme():
             sections.append(f'| {name}<br><sub>{by(p)}</sub> | {desc} | {size} |')
 
     owner = REPO.split('/')[0]
+    hooked = [f"`{p['name']}`" for p in plugins if inv.get(p['name'], {}).get('hooks')]
+    notes = ['Dự án cộng đồng, không liên kết với Anthropic hay các hãng có tên trong danh sách.']
+    if hooked:
+        who = ', '.join(hooked[:-1]) + ' và ' + hooked[-1] if len(hooked) > 1 else hooked[0]
+        notes.append(f'{who} có hook ⚡ tự chạy lệnh trên máy. Đọc kho gốc trước khi bật.')
+    notes += [
+        'Các plugin `ddc-*`, `diode-pcb` và `scientific-agent-skills` vốn là kho skill rời. Marketplace này bọc chúng thành plugin và ghim theo một commit cố định.',
+        '`nlmixr2llm` gốc có file manifest mà Claude Code bản mới không nhận (trường `agents`), nên marketplace này chỉ bọc phần skill của nó, ghim theo một commit cố định, chưa kèm agent điều phối.',
+        'Skill chỉ có trong app Claude không có ở đây. Plugin `operations` của bộ Financial Services trùng tên với `operations` của Knowledge Work nên không đưa vào.',
+        '`clinical-trial-protocol` bản lẻ của Life Sciences cần MCP ClinicalTrials cài qua Claude Desktop, còn `clinical-trial-forecast` chỉ chạy trong Claude Science, nên cả hai không đưa vào. Skill soạn đề cương thử nghiệm lâm sàng đã có sẵn trong `healthcare`.',
+    ]
+    notes_md = '\n'.join('- ' + n for n in notes)
     badges = '\n  '.join([
         badge('plugin', str(len(plugins)), '2563eb'),
         badge('skill', vn(sum(v['skills'] for v in inv.values())), '7c3aed'),
@@ -408,6 +449,14 @@ Không. Các plugin `*-legal` chủ yếu theo luật Mỹ. Dùng để tham kh�
 
 </details>
 
+<details>
+<summary><b>Plugin y khoa, dược có dùng để chẩn đoán hay kê đơn được không?</b></summary>
+<br>
+
+Không. Đây là công cụ hỗ trợ tra cứu, nghiên cứu và làm hồ sơ, phần lớn theo chuẩn của Mỹ và quốc tế (FDA, CMS, ICD-10-CM, SNOMED CT), không theo quy định của Bộ Y tế Việt Nam. Chẩn đoán, điều trị và dùng thuốc vẫn do bác sĩ, dược sĩ quyết định. Đừng đưa thông tin định danh bệnh nhân vào Claude khi nơi bạn làm việc chưa cho phép.
+
+</details>
+
 <a id="luu-y"></a>
 
 ## 🛡️ Lưu ý
@@ -415,10 +464,7 @@ Không. Các plugin `*-legal` chủ yếu theo luật Mỹ. Dùng để tham kh�
 > [!IMPORTANT]
 > Repo này chỉ chứa danh sách. Khi cài, Claude Code tải plugin thẳng từ kho gốc của từng tác giả. Plugin có thể chạy lệnh, script và kết nối dịch vụ trên máy bạn, nên hãy xem kho gốc trước khi cài, nhất là plugin của cộng đồng.
 
-- Dự án cộng đồng, không liên kết với Anthropic hay các hãng có tên trong danh sách.
-- `expo` và `aws-startup-advisor` có hook ⚡ tự chạy lệnh trên máy. Đọc kho gốc trước khi bật.
-- Các plugin `ddc-*`, `diode-pcb` và `scientific-agent-skills` vốn là kho skill rời. Marketplace này bọc chúng thành plugin và ghim theo một commit cố định.
-- Skill chỉ có trong app Claude không có ở đây. Plugin `operations` của bộ Financial Services trùng tên với `operations` của Knowledge Work nên không đưa vào.
+{notes_md}
 
 ## 🤝 Đóng góp
 
@@ -427,9 +473,10 @@ Biết plugin hay mà chưa có trong danh sách? [Mở issue](https://github.co
 Danh sách và README được dựng tự động bằng `scripts/build.py`:
 
 ```bash
-python3 -I scripts/build.py          # lấy lại danh sách từ marketplace gốc của từng tác giả
-python3 -I scripts/build.py check    # cài thử từng plugin trong thư mục tạm, cập nhật cột Skill
-python3 -I scripts/build.py readme   # chỉ dựng lại README
+python3 -I scripts/build.py              # lấy lại danh sách từ marketplace gốc của từng tác giả
+python3 -I scripts/build.py check        # cài thử từng plugin trong thư mục tạm, cập nhật cột Skill
+python3 -I scripts/build.py check <tên>  # chỉ cài thử vài plugin vừa thêm hoặc sửa
+python3 -I scripts/build.py readme       # chỉ dựng lại README
 ```
 
 ---
@@ -441,9 +488,13 @@ python3 -I scripts/build.py readme   # chỉ dựng lại README
 ''', encoding='utf-8')
 
 
-def check():
-    """Cài thử từng plugin vào thư mục cấu hình tạm (không đụng ~/.claude), ghi số skill, agent, hook, MCP và token."""
+def check(only=()):
+    """Cài thử từng plugin vào thư mục cấu hình tạm (không đụng ~/.claude), ghi số skill, agent, hook, MCP và token.
+    Có tên plugin thì chỉ cài thử những plugin đó, số liệu của các plugin khác giữ nguyên."""
     plugins = json.loads(MARKET.read_text(encoding='utf-8'))['plugins']
+    unknown = set(only) - {p['name'] for p in plugins}
+    assert not unknown, 'Không có plugin: ' + ', '.join(sorted(unknown))
+    old = json.loads(INV.read_text(encoding='utf-8')) if only and INV.exists() else {}
     inv, bad = {}, []
     with tempfile.TemporaryDirectory() as cfg:
         env = dict(os.environ, CLAUDE_CONFIG_DIR=cfg)
@@ -453,6 +504,10 @@ def check():
 
         assert claude('marketplace', 'add', str(ROOT)).returncode == 0, 'không thêm được marketplace từ thư mục này'
         for p in plugins:
+            if only and p['name'] not in only:
+                if p['name'] in old:
+                    inv[p['name']] = old[p['name']]
+                continue
             ref = f"{p['name']}@{NAME}"
             ok = claude('install', ref).returncode == 0
             d = claude('details', ref).stdout
@@ -472,4 +527,8 @@ def check():
 
 
 if __name__ == '__main__':
-    {'build': main, 'check': check, 'readme': write_readme}[sys.argv[1] if len(sys.argv) > 1 else 'build']()
+    cmd, *names = sys.argv[1:] or ['build']
+    if cmd == 'check':
+        check(names)
+    else:
+        {'build': main, 'readme': write_readme}[cmd]()

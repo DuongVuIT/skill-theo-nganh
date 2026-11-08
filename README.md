@@ -3,16 +3,16 @@
 </p>
 
 <p align="center">
-  <img alt="plugin: 79" src="https://img.shields.io/badge/plugin-79-2563eb?style=flat-square">
-  <img alt="skill: 1.283" src="https://img.shields.io/badge/skill-1.283-7c3aed?style=flat-square">
-  <img alt="nhóm ngành: 11" src="https://img.shields.io/badge/nh%C3%B3m%20ng%C3%A0nh-11-0d9488?style=flat-square">
+  <img alt="plugin: 87" src="https://img.shields.io/badge/plugin-87-2563eb?style=flat-square">
+  <img alt="skill: 1.515" src="https://img.shields.io/badge/skill-1.515-7c3aed?style=flat-square">
+  <img alt="nhóm ngành: 13" src="https://img.shields.io/badge/nh%C3%B3m%20ng%C3%A0nh-13-0d9488?style=flat-square">
   <img alt="dành cho: Claude Code" src="https://img.shields.io/badge/d%C3%A0nh%20cho-Claude%20Code-d97706?style=flat-square">
   <img alt="mô tả: tiếng Việt" src="https://img.shields.io/badge/m%C3%B4%20t%E1%BA%A3-ti%E1%BA%BFng%20Vi%E1%BB%87t-dc2626?style=flat-square">
   <a href="https://github.com/DuongVuIT/skill-theo-nganh/commits/main"><img alt="Lần cập nhật gần nhất" src="https://img.shields.io/github/last-commit/DuongVuIT/skill-theo-nganh?style=flat-square&label=c%E1%BA%ADp%20nh%E1%BA%ADt"></a>
 </p>
 
 <p align="center">
-  <b>79 plugin Claude Code chọn lọc cho 11 nhóm ngành, mô tả bằng tiếng Việt.</b><br>
+  <b>87 plugin Claude Code chọn lọc cho 13 nhóm ngành, mô tả bằng tiếng Việt.</b><br>
   Thêm marketplace một lần, rồi chọn plugin hợp với nghề của bạn ngay trong menu <code>/plugin</code>.
 </p>
 
@@ -36,7 +36,7 @@ claude plugin marketplace add DuongVuIT/skill-theo-nganh
 
 Đang ở trong Claude Code thì gõ `/plugin marketplace add DuongVuIT/skill-theo-nganh` cũng được.
 
-**2. Chọn plugin.** Gõ `/plugin` trong Claude Code để duyệt cả 79 plugin bằng menu, hoặc cài thẳng bằng tên:
+**2. Chọn plugin.** Gõ `/plugin` trong Claude Code để duyệt cả 87 plugin bằng menu, hoặc cài thẳng bằng tên:
 
 ```bash
 claude plugin install document-skills@skill-theo-nganh
@@ -54,7 +54,7 @@ claude plugin install document-skills@skill-theo-nganh
 | Nhóm ngành | Nên thử trước |
 |---|---|
 | 🏗️ [**Xây dựng & BIM**](#xay-dung)<br><sub>7 plugin · 238 skill</sub> | `ddc-toolkit` · `ddc-cwicr` |
-| 💻 [**Phần mềm & dữ liệu**](#phan-mem)<br><sub>8 plugin · 171 skill</sub> | `engineering` · `frontend-design` · `data` |
+| 💻 [**Phần mềm & dữ liệu**](#phan-mem)<br><sub>8 plugin · 173 skill</sub> | `engineering` · `frontend-design` · `data` |
 | ⚙️ [**Điện tử, cơ khí & sản xuất**](#dien-tu)<br><sub>2 plugin · 7 skill</sub> | `hardware` · `diode-pcb` |
 | 🎨 [**Design & sáng tạo**](#design)<br><sub>7 plugin · 60 skill</sub> | `design` · `figma` · `canva` |
 | 📣 [**Marketing & bán hàng**](#marketing)<br><sub>6 plugin · 118 skill</sub> | `marketing` · `sales` · `brand-voice` |
@@ -62,7 +62,9 @@ claude plugin install document-skills@skill-theo-nganh
 | ⚖️ [**Pháp lý**](#phap-ly)<br><sub>14 plugin · 160 skill</sub> | `legal` · `commercial-legal` · `law-student` |
 | 📋 [**Quản lý & vận hành**](#quan-ly)<br><sub>8 plugin · 139 skill</sub> | `product-management` · `human-resources` · `customer-support` |
 | 🎓 [**Giáo dục**](#giao-duc)<br><sub>1 plugin · 1 skill</sub> | `learn-with-coursera` |
-| 🔬 [**Khoa học & y sinh**](#khoa-hoc)<br><sub>3 plugin · 202 skill</sub> | `bio-research` · `ra-qm-skills` |
+| 🔬 [**Khoa học & y sinh**](#khoa-hoc)<br><sub>2 plugin · 183 skill</sub> | `bio-research` |
+| 🩺 [**Y khoa & y tế**](#y-khoa)<br><sub>4 plugin · 32 skill</sub> | `healthcare` · `biomcp` |
+| 💊 [**Dược & phát triển thuốc**](#duoc)<br><sub>5 plugin · 217 skill</sub> | `tooluniverse` |
 | 🗂️ [**Văn phòng & đa ngành**](#da-nganh)<br><sub>3 plugin · 13 skill</sub> | `document-skills` · `productivity` |
 
 <a id="danh-sach"></a>
@@ -93,13 +95,13 @@ Bấm tên plugin để xem kho gốc. Cột **Skill** là số skill đếm đ�
 
 ### 💻 Phần mềm & dữ liệu
 
-<sub>8 plugin · 171 skill</sub>
+<sub>8 plugin · 173 skill</sub>
 
 | Plugin | Làm gì | Skill |
 |---|---|:-:|
 | [`engineering`](https://github.com/anthropics/knowledge-work-plugins/tree/HEAD/engineering)<br><sub>Anthropic</sub> | Standup, review code, quyết định kiến trúc, thiết kế hệ thống, xử lý sự cố, checklist deploy, chiến lược test, nợ kỹ thuật, tài liệu kỹ thuật. | 10&nbsp;🟢 |
 | [`data`](https://github.com/anthropics/knowledge-work-plugins/tree/HEAD/data)<br><sub>Anthropic</sub> | Viết SQL, khám phá dữ liệu, thống kê, vẽ biểu đồ và dashboard, biến số liệu thô thành câu chuyện dễ hiểu. | 10&nbsp;🟢 |
-| [`unity`](https://unity.com)<br><sub>Unity</sub> | Plugin chính chủ của Unity cho làm game: phát triển, kiếm tiền từ game, tối ưu hiệu năng. | 31&nbsp;🔴 |
+| [`unity`](https://unity.com)<br><sub>Unity</sub> | Plugin chính chủ của Unity cho làm game: phát triển, kiếm tiền từ game, tối ưu hiệu năng. | 33&nbsp;🟡 |
 | [`frontend-design`](https://github.com/anthropics/claude-plugins-public/tree/main/plugins/frontend-design)<br><sub>Anthropic</sub> | Dựng giao diện web chỉn chu, có cá tính riêng, tránh kiểu giao diện AI na ná nhau. | 1&nbsp;🟢 |
 | [`expo`](https://github.com/expo/skills/blob/main/plugins/expo/README.md) ⚡<br><sub>Expo</sub> | Skill chính chủ của Expo: build, deploy, nâng cấp, debug app React Native, dựng giao diện với Expo Router. | 24&nbsp;🟡 |
 | [`aws-startup-advisor`](https://github.com/aws/agent-toolkit-for-aws) ⚡<br><sub>Amazon Web Services</sub> | Gợi ý kiến trúc, chi phí và bảo mật AWS theo đúng giai đoạn của startup. | 13&nbsp;🔴 |
@@ -231,13 +233,39 @@ Bấm tên plugin để xem kho gốc. Cột **Skill** là số skill đếm đ�
 
 ### 🔬 Khoa học & y sinh
 
-<sub>3 plugin · 202 skill</sub>
+<sub>2 plugin · 183 skill</sub>
 
 | Plugin | Làm gì | Skill |
 |---|---|:-:|
 | [`bio-research`](https://github.com/anthropics/knowledge-work-plugins/tree/HEAD/bio-research)<br><sub>Anthropic</sub> | Kết nối công cụ và cơ sở dữ liệu nghiên cứu tiền lâm sàng: tra tài liệu, phân tích hệ gen, xếp hạng đích điều trị. | 6&nbsp;🟢 |
-| [`ra-qm-skills`](https://github.com/alirezarezvani/claude-skills/tree/HEAD/ra-qm-team)<br><sub>Alireza Rezvani</sub> | Quy chuẩn và quản lý chất lượng cho thiết bị y tế: ISO 13485, MDR 2017/745, FDA 510(k)/PMA, GDPR, ISO 27001, CAPA, quản lý rủi ro, đánh giá lâm sàng, SOC 2. | 19&nbsp;🟡 |
 | [`scientific-agent-skills`](https://github.com/K-Dense-AI/scientific-agent-skills/tree/HEAD/skills)<br><sub>K-Dense</sub> | Nghiên cứu khoa học: tin sinh học và hệ gen, protein, hóa học, ảnh y khoa, máy tính lượng tử, học máy, vẽ hình khoa học, tra cứu tài liệu. Rất nặng: chiếm gần 20 nghìn token ngữ cảnh mỗi phiên, chỉ cài khi cần. | 177&nbsp;🔴 |
+
+<a id="y-khoa"></a>
+
+### 🩺 Y khoa & y tế
+
+<sub>4 plugin · 32 skill</sub>
+
+| Plugin | Làm gì | Skill |
+|---|---|:-:|
+| [`healthcare`](https://github.com/anthropics/healthcare/tree/HEAD/plugins/healthcare)<br><sub>Anthropic</sub> | Bộ Claude for Healthcare: duyệt prior auth (xin tiền phê duyệt bảo hiểm), gán mã bệnh ICD-10-CM và mã thủ thuật CPT/HCPCS, trích dữ liệu từ ghi chú lâm sàng, soạn đề cương thử nghiệm lâm sàng, đọc hồ sơ bệnh án qua FHIR, sàng lọc gian lận bảo hiểm. Kết nối sẵn PubMed, ClinicalTrials.gov, ICD-10, CMS, NPI. Phần bảo hiểm và mã hóa theo hệ thống Mỹ. | 10&nbsp;🟡 |
+| [`snowstorm-mcp-server`](https://github.com/IHTSDO/snowstorm-mcp-server)<br><sub>SNOMED International</sub> | Tra bộ thuật ngữ lâm sàng SNOMED CT: tìm khái niệm, kiểm mã, duyệt cây phân cấp, mở rộng value set, đủ các bản quốc tế, Mỹ, Anh, Úc. Máy chủ do chính SNOMED International vận hành, không cần cài. Dùng để tra cứu và tìm hiểu; đưa vào sản phẩm thì cần giấy phép SNOMED CT. | 2&nbsp;🟢 |
+| [`biomcp`](https://biomcp.org)<br><sub>GenomOncology</sub> | Tra bằng chứng y sinh từ một chỗ: bài báo PubMed, thử nghiệm lâm sàng, gen và biến thể (ClinVar), thuốc, bệnh, pathway, protein. Chỉ đọc dữ liệu, không ghi gì. Cần cài biomcp-cli. | 1&nbsp;🟢 |
+| [`ra-qm-skills`](https://github.com/alirezarezvani/claude-skills/tree/HEAD/ra-qm-team)<br><sub>Alireza Rezvani</sub> | Quy chuẩn và quản lý chất lượng cho thiết bị y tế: ISO 13485, MDR 2017/745, FDA 510(k)/PMA, GDPR, ISO 27001, CAPA, quản lý rủi ro, đánh giá lâm sàng, SOC 2. | 19&nbsp;🟡 |
+
+<a id="duoc"></a>
+
+### 💊 Dược & phát triển thuốc
+
+<sub>5 plugin · 217 skill</sub>
+
+| Plugin | Làm gì | Skill |
+|---|---|:-:|
+| [`maven-bio`](https://mavenbio.com/mcp/docs)<br><sub>Maven Bio</sub> | Nghiên cứu ngành dược sinh học trên đồ thị tri thức của Maven Bio: pipeline của đối thủ, bức tranh theo chỉ định điều trị, hồ sơ từng hoạt chất, thương vụ và gọi vốn, tổng hợp bằng chứng có dẫn nguồn FDA, SEC, thử nghiệm lâm sàng. Cần tài khoản Maven Bio. | 16&nbsp;🟡 |
+| [`binder-gauntlet`](https://github.com/anthropics/life-sciences/tree/HEAD/binder-gauntlet)<br><sub>Anthropic</sub> | Kiểm chứng protein gắn đích (binder) thiết kế mới trước khi đặt tổng hợp DNA: dự đoán lại cấu trúc bằng công cụ độc lập, chạy đối chứng, đánh giá khả năng phát triển thành thuốc (developability), xuất hồ sơ ghi rõ phần nào chưa kiểm. Mọi kết quả đều là dự đoán tính toán. | 1&nbsp;🟢 |
+| [`tooluniverse`](https://github.com/mims-harvard/ToolUniverse/tree/HEAD/plugin) ⚡<br><sub>Zitnik Lab, Harvard</sub> | Hơn 2.700 công cụ tra cứu (PubMed, PubChem, FAERS, ClinicalTrials.gov, UniProt…) kèm skill cho nghiên cứu thuốc, tương tác thuốc, phát hiện biến cố bất lợi, dự đoán ADMET, hồ sơ đăng ký thuốc, tái định vị thuốc, thẩm định đích tác dụng, cả hệ gen và lâm sàng. Cần cài uv. Hook chạy một lần để xóa skill tooluniverse-* cài kiểu cũ trong ~/.claude/skills (nếu có). Rất nặng: chiếm khoảng 24 nghìn token ngữ cảnh mỗi phiên, chỉ cài khi cần. | 171&nbsp;🔴 |
+| [`jinko`](https://github.com/novainsilico/jinko-skills)<br><sub>Nova In Silico</sub> | Dược lý hệ thống định lượng (QSP) trên nền tảng Jinkō: gom bằng chứng và dữ liệu, dựng và hiệu chỉnh mô hình, phân tích độ nhạy, tạo quần thể ảo, mô phỏng thử nghiệm lâm sàng in silico. Cần tài khoản Jinkō. | 24&nbsp;🔴 |
+| [`nlmixr2llm`](https://github.com/nlmixr2/nlmixr2llm/tree/HEAD/inst/skills)<br><sub>nlmixr2</sub> | Mô hình dược động học, dược lực học quần thể (popPK/PD) với hệ nlmixr2 trong R: mô phỏng, ước lượng tham số, thiết kế nghiên cứu tối ưu, viết báo cáo, chuyển mô hình qua lại với NONMEM và Monolix. Cần R và các gói nlmixr2. | 5&nbsp;🟡 |
 
 <a id="da-nganh"></a>
 
@@ -300,6 +328,14 @@ Không. Các plugin `*-legal` chủ yếu theo luật Mỹ. Dùng để tham kh�
 
 </details>
 
+<details>
+<summary><b>Plugin y khoa, dược có dùng để chẩn đoán hay kê đơn được không?</b></summary>
+<br>
+
+Không. Đây là công cụ hỗ trợ tra cứu, nghiên cứu và làm hồ sơ, phần lớn theo chuẩn của Mỹ và quốc tế (FDA, CMS, ICD-10-CM, SNOMED CT), không theo quy định của Bộ Y tế Việt Nam. Chẩn đoán, điều trị và dùng thuốc vẫn do bác sĩ, dược sĩ quyết định. Đừng đưa thông tin định danh bệnh nhân vào Claude khi nơi bạn làm việc chưa cho phép.
+
+</details>
+
 <a id="luu-y"></a>
 
 ## 🛡️ Lưu ý
@@ -308,9 +344,11 @@ Không. Các plugin `*-legal` chủ yếu theo luật Mỹ. Dùng để tham kh�
 > Repo này chỉ chứa danh sách. Khi cài, Claude Code tải plugin thẳng từ kho gốc của từng tác giả. Plugin có thể chạy lệnh, script và kết nối dịch vụ trên máy bạn, nên hãy xem kho gốc trước khi cài, nhất là plugin của cộng đồng.
 
 - Dự án cộng đồng, không liên kết với Anthropic hay các hãng có tên trong danh sách.
-- `expo` và `aws-startup-advisor` có hook ⚡ tự chạy lệnh trên máy. Đọc kho gốc trước khi bật.
+- `expo`, `aws-startup-advisor` và `tooluniverse` có hook ⚡ tự chạy lệnh trên máy. Đọc kho gốc trước khi bật.
 - Các plugin `ddc-*`, `diode-pcb` và `scientific-agent-skills` vốn là kho skill rời. Marketplace này bọc chúng thành plugin và ghim theo một commit cố định.
+- `nlmixr2llm` gốc có file manifest mà Claude Code bản mới không nhận (trường `agents`), nên marketplace này chỉ bọc phần skill của nó, ghim theo một commit cố định, chưa kèm agent điều phối.
 - Skill chỉ có trong app Claude không có ở đây. Plugin `operations` của bộ Financial Services trùng tên với `operations` của Knowledge Work nên không đưa vào.
+- `clinical-trial-protocol` bản lẻ của Life Sciences cần MCP ClinicalTrials cài qua Claude Desktop, còn `clinical-trial-forecast` chỉ chạy trong Claude Science, nên cả hai không đưa vào. Skill soạn đề cương thử nghiệm lâm sàng đã có sẵn trong `healthcare`.
 
 ## 🤝 Đóng góp
 
@@ -319,9 +357,10 @@ Biết plugin hay mà chưa có trong danh sách? [Mở issue](https://github.co
 Danh sách và README được dựng tự động bằng `scripts/build.py`:
 
 ```bash
-python3 -I scripts/build.py          # lấy lại danh sách từ marketplace gốc của từng tác giả
-python3 -I scripts/build.py check    # cài thử từng plugin trong thư mục tạm, cập nhật cột Skill
-python3 -I scripts/build.py readme   # chỉ dựng lại README
+python3 -I scripts/build.py              # lấy lại danh sách từ marketplace gốc của từng tác giả
+python3 -I scripts/build.py check        # cài thử từng plugin trong thư mục tạm, cập nhật cột Skill
+python3 -I scripts/build.py check <tên>  # chỉ cài thử vài plugin vừa thêm hoặc sửa
+python3 -I scripts/build.py readme       # chỉ dựng lại README
 ```
 
 ---
